@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/rl_type_regular_right"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/news_title"
+                style="@style/NewsTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="1234567890一二三四五六1234567890一二三四五六1234567890一二三四五六1234567890一二三四五六1234567890一二三四五六"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/news_img"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/homepage_newslist_nonpicture"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/news_tag"
+                style="@style/NewsTagStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/tag_board"
+                android:gravity="center_vertical"
+                android:text="热门"
+                android:layout_marginRight="16dp"
+                />
+
+            <TextView
+                android:id="@+id/news_source"
+                style="@style/NewsTimeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="YahooNews"
+                />
+
+            <TextView
+                android:id="@+id/news_date"
+                style="@style/NewsTimeStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="1天前"
+                />
+
+            <!--<TextView-->
+                <!--android:id="@+id/news_uninteresting"-->
+                <!--style="@style/NewsTimeStyle"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="right|center_vertical"-->
+                <!--android:text="x"-->
+                <!--/>-->
+
+                <ImageView
+                    android:id="@+id/news_uninteresting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/news_item_close_night"
+                    />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_type_regular_right_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_grey"
+        />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <array name="emo_item">
+        <!-- amaze -->
+        <item>@id/emo_item_amazing</item>
+        <item>@string/label_amaze</item>
+        <item>@drawable/expression_amazing</item>
+        <!-- move -->
+        <item>@id/emo_item_moving</item>
+        <item>@string/label_move</item>
+        <item>@drawable/expression_moving</item>
+        <!-- sad -->
+        <item>@id/emo_item_sad</item>
+        <item>@string/label_sad</item>
+        <item>@drawable/expression_sad</item>
+        <!-- angry -->
+        <item>@id/emo_item_angry</item>
+        <item>@string/label_angry</item>
+        <item>@drawable/expression_angry</item>
+        <!-- happy -->
+        <item>@id/emo_item_happy</item>
+        <item>@string/label_happy</item>
+        <item>@drawable/expression_happy</item>
+        <!-- worry -->
+        <item>@id/emo_item_worry</item>
+        <item>@string/label_worry</item> 
+        <item>@drawable/expression_worry</item>
+    </array>
+</resources>

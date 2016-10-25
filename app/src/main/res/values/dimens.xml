@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="item_height">48dp</dimen>
+    
+    <dimen name="section_div_height">20dp</dimen>
+    <dimen name="action_bar_height">42dp</dimen>
+    <dimen name="action_bar_divider_height">31dp</dimen>
+
+    <dimen name="setting_menu_width">280dp</dimen>
+    <dimen name="setting_menu_margin">8dp</dimen>
+    <dimen name="pie_button_item_size">300dp</dimen>
+    <dimen name="setting_menu_title_padding">10dp</dimen>
+    <dimen name="setting_menu_item_height">60dp</dimen>
+    
+    <dimen name="splash_ft_title">30sp</dimen>
+    <dimen name="splash_ft_info">14sp</dimen>
+    
+    <dimen name="article_news_image_desc_height">100dp</dimen>
+    <dimen name="article_news_image_padding">8dp</dimen>
+    
+    
+    <dimen name="offline_item_height">40dp</dimen>
+
+    <dimen name="banner_ad_height">50dp</dimen>
+
+    <dimen name="menu_interesting_layout">320dp</dimen>
+    <dimen name="menu_interesting_layout_item">160dp</dimen>
+</resources>

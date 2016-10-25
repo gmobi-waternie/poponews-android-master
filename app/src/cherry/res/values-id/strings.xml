@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <string name="app_name">InfoCenter</string>
+    <string name="app_title">InfoCenter</string>
+	
+    <string name="splash_foot">www.infocenter.com</string>
+	
+</resources>

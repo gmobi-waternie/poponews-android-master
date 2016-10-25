@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PoPoNews</string>
+    <string name="app_title">POPONEWS</string>
+    <string name="action_settings">Настройки</string>
+    <string name="left_drawer_hint_open">Открыть панель</string>
+    <string name="left_drawer_hint_close">Закрыть панель</string>
+    <string name="action_menu_category">Категории</string>
+    <string name="title_error">Ошибка</string>
+    <string name="error_to_load_data">Ошибка загрузки данных!</string>
+    <string name="button_ok">OK</string>
+    <string name="main_loading">Загрузка новостей...</string>
+    <string name="store_loading">Загрузка витрины...</string>
+    <string name="add_favorite">Добавить в избранные.</string>
+    <string name="remove_favorite">Удалить из избранных.</string>
+    <string name="share_title">Поделиться</string>
+    <string name="share_subject">Отправлено из PopoNews</string>
+    <string name="setting_nightmode">Ночной режим</string>
+    <string name="setting_fontsize">Размер шрифта</string>
+    <string name="setting_nointerested">Не интересно</string>
+    <string name="press_back_again">Нажмите еще раз для выхода.</string>
+    
+    <string name="ctg_cannot_all_clear">Оставьте хотя бы одну категорию.</string>
+    <string name="label_menu_fav">Мои Избранные</string>
+    <string name="label_menu_feed">Новостная лента</string>
+    <string name="label_menu_histroy">Недавно прочитанные</string>
+    
+    <string name="label_menu_download">Offline загрузка</string>
+    <string name="label_menu_config">Настройки</string>
+    <string name="label_menu_mode_night">Ночной режим</string>
+    <string name="label_menu_mode_hide">Скрыть прочитанное</string>
+    <string name="splash_ver">Версия: %1$s</string>
+    <string name="splash_foot">www.poponews.com</string>
+    <string name="webview_readsource">ЧИТАТЬ ЭТУ СТАТЬЮ В WEB</string>
+
+    <!-- emo names -->
+    <string name="label_amaze">Удивлен</string>
+    <string name="label_move">Взволнован</string>
+    <string name="label_angry">Зол</string>
+    <string name="label_happy">Счастлив</string>
+    <string name="label_sad">Грустен</string>
+    <string name="label_worry">Озабочен</string>
+
+    
+    <string name="pull_to_refresh_release_label">Нажмите для обновления...</string>
+    <string name="pull_to_refresh_pull_label">Нажмите для получения свежих новостей...</string>
+    <string name="pull_to_refresh_tap_label">Нажмите для получения свежих новостей...</string>
+    <string name="pull_to_refresh_refreshing_label">Загрузка новостей...</string>
+    
+    <string name="pull_to_refresh">Нажмите для получения свежих новостей...</string>
+	<string name="release_to_refresh">Нажмите для обновления...</string>
+	<string name="refreshing">Обновление новостей...</string>
+	<string name="not_updated_yet">Не обновлено</string>
+	<string name="updated_at">Последнее обновление %1$s назад</string>
+	<string name="updated_just_now">Только что обновлено</string>
+	<string name="time_error">Ошибка загрузки.</string>
+	
+	<string name="minute"> минута</string>
+	<string name="hour"> час</string>
+	<string name="day"> день</string>
+	<string name="month"> месяц</string>
+	<string name="year"> год</string>
+
+
+    <!-- settings main-->
+    <string name="set_feed">Новостные ленты</string>
+    <string name="set_edition">Редакция</string>
+    <string name="set_clean">Очистить кэш</string>
+    <string name="set_suggest">Обратная связь</string>
+    <string name="set_store">Предложения</string>
+    <string name="set_about">О приложении</string>
+    
+    <string name="dialog_update_title">Обновить</string>
+    <string name="dialog_update_progress_title">Обновление</string>
+    <string name="dialog_update_text">Найдена новая версия. \nОбновить?</string>
+    <string name="dialog_update_text2">Обновить до версии %1$s</string>
+    
+    <string name="dialog_fav_title">Избранное</string>
+    <string name="dialog_fav_text">Удалить из Избранного?</string>
+    <string name="dialog_yes">Да</string>
+    <string name="dialog_no">Отмена</string>
+    <string name="dialog_clean">Очистка</string>
+
+    <string name="fav_delete">Хотите убрать это из Избранного?</string>
+    <string name="fav_share">Выберите новости, чтобы поделиться.</string>
+    
+    <string name="update_skip">Пропустить</string>
+    
+    <string name="offline_setting_title">Offline настройки</string>
+    <string name="offline_select_category">Выберите категорию</string>
+    <string name="offline_select_all">Все</string>
+    <string name="offline_download_pic">Загрузить картинки</string>
+    <string name="offline_download_time">Прогресс Offline загрузки</string>
+    <string name="dialog_offline_time_title">Установить время</string>
+    <string name="offline_download_empty">Сначала выберите одну категорию</string>
+    <string name="offline_download_finish">Offline загрузка окончена</string>
+    <string name="feedback_info">Ваш отзыв:</string>
+    <string name="feedback_send">Отправить</string>
+    
+    <string name="notification_title">Вы получили новую ленту.</string>
+    <string name="feed_is_empty">Новостная лента пустая.</string>
+    <string name="feedback_sent">Ваш отзыв отправлен.</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（Share From Vogue %2$s）</string>
+
+</resources>

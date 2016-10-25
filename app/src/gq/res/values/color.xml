@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_item_background">#ffebebeb</color>
+    <color name="menu_item_vertical_divider_color">#ffc8c8c8</color>
+    <color name="menu_divider_color">#ffbbbbbb</color>
+    <color name="menu_divider_color_right">#ffe2e2e2</color>
+    
+    <color name="bg_red">#ffc8161d</color>
+    <color name="bg_dark_red">#ffd73123</color>
+    <color name="bg_yellow">#ffffff00</color>
+    <color name="bg_black">#ff222222</color>
+    <color name="bg_grey">#ff999999</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="bg_blue">#29a6ff</color>
+    <color name="bg_transparent">#00000000</color>
+    
+
+    
+    
+    
+    <color name="bg_red_night">#ff84261e</color>
+    <color name="bg_dark_red_night">#ff701d16</color>
+    <color name="bg_yellow_night">#ff858406</color>
+    <color name="bg_black_night">#ff222222</color>
+    <color name="bg_grey_night">#ff5c5c5c</color>
+    <color name="bg_white_night">#ff909090</color>
+    <color name="bg_title_white_night">#ff888888</color>
+    
+    
+    
+    <color name="actionbar_bg">#ff84261e</color>
+    <color name="actionbar_bg_night">#ff84261e</color>
+    <color name="actionbar_text_color">#ff222222</color>
+    <color name="actionbar_text_color_night">#ff888888</color>
+    
+    <color name="actionbar_divider_color">#ff000000</color>
+    <color name="actionbar_divider_shadow_color">#ff888888</color>
+    
+    <color name="actionbar_sys_bg_color">#ffffffff</color>
+    <color name="actionbar_sys_bg_color_night">#ff222222</color>
+    
+    
+    <color name="tab_indicator_color">#ffc8161d</color>
+    <color name="tab_indicator_color_night">#ffc8161d</color>
+	<color name="tab_bg_color">#ff222222</color>
+	<color name="tab_bg_color_night">#ff222222</color>
+	<color name="tab_title_color">#ffffffff</color>
+	<color name="tab_title_color_night">#ff888888</color>  
+	
+	
+	  
+    
+    <color name="list_grey">#fff2f3f7</color>
+    <color name="list_title_black">#ff242424</color>
+    <color name="list_source_grey">#ff9a9a9a</color>
+    <color name="list_time_grey">#ffa0a0a0</color>
+    <color name="list_line_grey">#ffcccccc</color>
+    <color name="list_divider_grey">#ffdddddd</color>
+    
+    
+   	<color name="emo_button_bg">#dd000000</color>
+    <color name="emo_button_pressed">#ddff4131</color>
+    <color name="emo_heart">#ffffffff</color>
+    
+    <color name="splash_top_bg">#f33c2d</color>
+    <color name="splash_ft_title">#666666</color>
+    <color name="splash_ft_info">#999999</color>
+    <color name="splash_update">#999999</color>
+    
+    
+    <color name="action_bg">#ffffffff</color>
+    <color name="action_bg_night">#ff84261e</color>
+    
+</resources>

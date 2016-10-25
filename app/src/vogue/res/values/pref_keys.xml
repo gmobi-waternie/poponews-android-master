@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="key_set" translatable="false">setting</string>
+    <string name="key_feed" translatable="false">feeds</string>
+    <string name="key_clean" translatable="false">clean</string>
+    <string name="key_edition" translatable="false">edition</string>
+    <string name="key_fav" translatable="false">fav</string>
+    <string name="key_read" translatable="false">read</string>
+    <string name="key_offline" translatable="false">offline</string>
+    <string name="key_store" translatable="false">store</string>
+    
+    
+    
+    <string name="menu_key_feed" translatable="false">menufeed</string>
+    <string name="menu_key_fav" translatable="false">menufav</string>
+    <string name="menu_key_facebook" translatable="false">menufacebook</string>
+    <string name="menu_key_read" translatable="false">menuread</string>
+    <string name="menu_key_offline" translatable="false">menuoffline</string>
+    <string name="menu_key_setting" translatable="false">menusetting</string>
+    
+    
+</resources>

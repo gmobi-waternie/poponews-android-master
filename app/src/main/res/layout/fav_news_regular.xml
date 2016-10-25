@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+    	android:layout_height="81dp" 
+    	android:orientation="vertical"
+    	android:descendantFocusability="blocksDescendants"
+    	
+	    >
+	<LinearLayout
+		android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1" 
+    	android:id="@+id/outll_type_regular"
+    	android:orientation="horizontal"
+    	
+	    >
+		<CheckBox
+		    android:layout_width="40dp"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:id="@+id/fav_cb"
+		    android:layout_marginLeft="10dp"
+		   	style="@style/FavCheckboxTheme"
+			/>
+	
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_weight="1"
+	    	android:layout_height="81dp" 
+	    	android:id="@+id/rl_type_regular"
+	    	android:orientation="horizontal"
+		    >
+		    <LinearLayout
+			android:layout_width="match_parent"
+	    	android:layout_height="80dp" 
+	    	android:id="@+id/ll_type_regular"
+	    	android:orientation="horizontal"
+		    >
+	    
+		    <ImageView
+		        android:layout_width="100dp"
+		        android:layout_height="match_parent"
+		        android:id="@+id/news_img"
+		        android:scaleType="fitCenter"
+		        android:layout_marginTop="11dp"
+		        android:layout_marginBottom="11dp"
+		        android:layout_marginLeft="10dp"
+	
+		        />
+		    
+		    <RelativeLayout 
+		       	android:layout_width="0dp"
+	    		android:layout_height="match_parent"
+	    		android:layout_weight="1">
+	    		
+	    		<TextView
+	    		    android:id="@+id/news_title"
+	    		    android:layout_width="match_parent"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_marginTop="7dp"
+	    		    android:layout_marginLeft="14dp"
+	    		    android:layout_marginRight="8dp"
+	    		    android:maxLines="2"
+	    		    android:ellipsize="end"
+	    		    style="@style/NewsTitleStyle"
+	    		    
+	    		    
+	    		    />    		    
+	    		<TextView
+	    		    android:id="@+id/news_source"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_alignParentLeft="true"
+	    		    android:layout_alignParentBottom="true"
+	    		    android:layout_marginLeft="14dp"
+	    		    android:layout_marginBottom="10dp"
+	    		    style="@style/NewsSourceStyle"
+	    		    />
+	
+	    		<TextView
+	    		    android:id="@+id/news_fav_num"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    
+	    		    android:text="0"		    
+	    		    android:layout_alignParentRight="true"
+    		    	android:layout_alignParentBottom="true"
+    		    	android:layout_marginRight="8dp"
+    		    	android:layout_marginBottom="10dp"
+	    		    style="@style/NewsTimeStyle"
+	    		    />
+	    		<ImageView
+	    		    android:id="@+id/news_fav_star"
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"    		    
+	    		    android:layout_toLeftOf="@id/news_fav_num"
+	    		    android:layout_marginRight="4dp"
+	    		    android:layout_alignTop="@id/news_fav_num"
+    		    	android:layout_alignBottom="@id/news_fav_num"
+	    		    android:src="@drawable/star_off"
+	    		    />
+				    
+	    		<LinearLayout 
+	    		    android:layout_width="wrap_content"
+	    		    android:layout_height="wrap_content"
+	    		    android:layout_alignTop="@id/news_fav_num"
+	    		    android:layout_alignBottom="@id/news_fav_num"
+	    		    
+	    		    android:layout_toLeftOf="@id/news_fav_star"
+	    		    android:layout_marginRight="4dp"
+	    		    android:orientation="horizontal"
+	    		    >
+	    		    <ImageView 
+		    		    android:id="@+id/iv_news_emo"
+		    		    android:layout_width="wrap_content"
+		    		    android:layout_height="wrap_content"
+	    		        android:src="@drawable/expression_happy_newslist"
+	    		        android:layout_marginRight="2dp"
+	    		        />
+	    		    
+	    			<TextView
+		    		    android:id="@+id/tv_news_emo"
+		    		    android:layout_width="wrap_content"
+		    		    android:layout_height="wrap_content"
+		    		    android:layout_marginLeft="2dp"
+		    		    android:text="83%"
+		    		    style="@style/NewsTimeStyle"
+	    		    />
+	    		    
+	    		</LinearLayout>
+	    		
+		     </RelativeLayout>
+	
+		</LinearLayout>
+	
+	</RelativeLayout>
+	
+	</LinearLayout>
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@color/list_divider_grey"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		/>
+		  
+</LinearLayout> 
+

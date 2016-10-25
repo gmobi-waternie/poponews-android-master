@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+
+
+    <!-- Need by GCM-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.poponews.global.permission.C2D_MESSAGE"/>
+
+    <permission
+        android:name="com.poponews.global.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <!-- Need by GCM-->
+
+
+
+    <application>
+        <!-- -->
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="64fb44a8a49b98680b0870af051ee7f994479429"/>
+
+
+        <!--AD SDK Begin -->
+        <!-- Ad Service -->
+        <meta-data
+            android:name="reach.ads.key"
+            android:value="56400e02d3ad3f6a2a262a5d"/>
+
+
+        <!--AD SDK End -->
+
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.poponews.global"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+
+</manifest>

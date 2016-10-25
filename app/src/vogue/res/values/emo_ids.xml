@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="emo_background" />
+    <item type="id" name="emo_text" />
+    <item type="id" name="emo_center_heart" />
+    <item type="id" name="emo_item_amazing" />
+    <item type="id" name="emo_item_moving" />
+    <item type="id" name="emo_item_sad" />
+    <item type="id" name="emo_item_angry" />
+    <item type="id" name="emo_item_happy" />
+    <item type="id" name="emo_item_worry" />
+    
+</resources>

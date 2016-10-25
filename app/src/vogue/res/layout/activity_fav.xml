@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_fav_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/bg_red" >
+
+        <ImageButton
+            android:id="@+id/fav_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/navigaton_back" />
+
+        <TextView
+            android:id="@+id/fav_action_bar_title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fav_back"
+            android:text="@string/label_menu_fav" />
+
+        
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:orientation="horizontal">
+        
+			
+			<ImageButton
+			    android:id="@+id/fav_action_bar_edit"
+				android:layout_gravity="center"
+				android:gravity="center"
+			    android:layout_height="match_parent"
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_marginLeft="10dp"
+        		android:layout_marginRight="10dp"
+			    android:background="#00000000"
+			    android:src="@drawable/navigaton_edit"
+				/>
+			
+
+			<ImageButton
+			    android:id="@+id/fav_action_bar_del"
+				android:layout_gravity="center"
+				android:gravity="center"
+			    android:layout_height="match_parent"
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+			    android:layout_marginLeft="10dp"
+        		android:layout_marginRight="10dp"
+			    android:background="#00000000"
+			    android:src="@drawable/navigaton_delete"
+				android:visibility="gone" 
+				/>
+
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_height="3px"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/divider"
+            android:layout_alignParentBottom="true">
+            <View 
+	            android:background="@color/actionbar_divider_color"
+	            android:layout_height="1px"
+	            android:layout_width="match_parent"/>
+	        
+	        <View 
+	            android:background="@color/actionbar_divider_shadow_color"
+	            android:layout_height="2px"
+	            android:layout_width="match_parent"/>
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+	<ListView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:id="@+id/lv_favlist"
+		android:background="@color/bg_white"
+	    android:divider="@null"
+	    android:layout_below="@id/rl_fav_action_bar"
+	    />
+</RelativeLayout>
+   
+

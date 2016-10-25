@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <View
+            android:id="@+id/statusBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_ss_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/bg_red" >
+
+        <ImageButton
+            android:id="@+id/ss_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/navigaton_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss_icon"
+            android:src="@drawable/facebook_1"
+            android:layout_toRightOf="@id/ss_back"/>
+
+        <TextView
+            android:id="@+id/ss_action_bar_title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ss_icon"
+            android:text="@string/set_store" />
+
+        <ImageButton
+            android:id="@+id/ss_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:src="@drawable/navigation_ok" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/ll_ss_select">
+
+                <CheckBox
+                    android:id="@+id/cb_social_select_all"
+                    style="@style/SocialCheckbox"
+                    android:button="@null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:checked="false"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/offline_select_all"
+                    android:textColor="@color/bg_grey"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <CheckBox
+                        android:button="@drawable/night_radiobtn_selector"
+                        android:layout_height="wrap_content"
+                        android:layout_width="54dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="32dp"
+                        android:id="@+id/cb_socail"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ll_ss_select"
+                android:layout_marginTop="4dp"
+                android:background="@color/bg_grey"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_loading">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/loading_anim"/>
+
+                <TextView
+                    android:id="@+id/tv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_loading"
+                    android:text="@string/load_social_channel" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_ss_ctglist"
+            android:background="@color/bg_transparent"
+            android:divider="@null"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="32dp"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

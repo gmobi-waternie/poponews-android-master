@@ -1,0 +1,2 @@
+include ':app', ':library', ':facebook'
+include ':weiboSDK'

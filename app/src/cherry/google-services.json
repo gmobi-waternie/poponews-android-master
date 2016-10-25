@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "250625308466",
+    "project_id": "poponews---cherry"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250625308466:android:023440a8113c938d",
+        "android_client_info": {
+          "package_name": "com.poponews.cherry"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSOzX7-eBdNhb3J4sdfdHK5QNXFtJRdPI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-59522043-6"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

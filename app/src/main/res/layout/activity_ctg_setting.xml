@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="?view_bg"
+			  android:orientation="vertical">
+	<View
+		android:id="@+id/statusBarBackground"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+    
+    <RelativeLayout
+        android:id="@+id/rl_cs_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/bg_red" >
+
+        <ImageButton
+            android:id="@+id/cs_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/navigaton_back" />
+
+        <TextView
+            android:id="@+id/cs_action_bar_title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cs_back"
+            android:text="@string/action_menu_category" />
+
+
+		<TextView
+			android:id="@+id/cs_action_bar_edit"
+			style="@style/TitleTextStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:text="@string/category_setting_edit"
+			android:paddingRight="8dp"/>
+		<TextView
+			android:id="@+id/cs_action_bar_done"
+			style="@style/TitleTextStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:text="@string/category_setting_done"
+			android:paddingRight="8dp"
+			android:visibility="gone"/>
+        
+    </RelativeLayout>
+    
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:layout_marginTop="16dp"
+	    android:id="@+id/rl_cs_list"
+	    android:layout_below="@id/rl_cs_action_bar"
+        >
+
+		<com.mobeta.android.dslv.DragSortListView
+			android:id="@+id/cs_list"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="3dp"
+			android:choiceMode="multipleChoice"
+			android:dividerHeight="0dp"
+			android:divider="@null"
+			android:padding="3dp"
+			android:visibility="gone"/>
+		<ListView
+			android:id="@+id/cs_visible_list"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_margin="3dp"
+			android:choiceMode="multipleChoice"
+			android:dividerHeight="0dp"
+			android:divider="@null"
+			android:padding="3dp"
+			/>
+	</RelativeLayout>
+    
+
+</LinearLayout>
+   
+

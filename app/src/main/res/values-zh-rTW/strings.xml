@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+	<string name="app_name">泡泡新聞</string>
+    <string name="app_title">泡泡新聞</string>
+    <string name="action_settings">設定</string>
+    <string name="left_drawer_hint_open">打開</string>
+    <string name="left_drawer_hint_close">關閉</string>
+    <string name="action_menu_category">類別</string>
+    <string name="title_error">錯誤</string>
+    <string name="error_to_load_data">新聞更新失敗！\n請檢測網絡狀態</string>
+    <string name="button_ok">確定</string>
+    <string name="main_loading">下載新聞…</string>
+    <string name="store_loading">下載中...</string>
+    <string name="add_favorite">已加入收藏</string>
+    <string name="remove_favorite">已從收藏中移除</string>
+    <string name="share_title">分享至</string>
+    <string name="share_subject">來自POPONEWS分享</string>
+    <string name="setting_nightmode">夜間模式</string>
+    <string name="setting_fontsize">字體大小</string>
+    <string name="setting_nointerested">不感興趣</string>
+    <string name="press_back_again">再按一次推出應用</string>
+    <string name="ctg_cannot_all_clear">請至少保留一個類別</string>
+    <string name="label_menu_fav">我的收藏</string>
+    <string name="label_menu_feed">最新訂閱</string>
+    <string name="label_menu_histroy">最近閱讀</string>
+    <string name="label_menu_download">離線下載</string>
+    <string name="label_menu_config">設定</string>
+    <string name="label_menu_mode_night">夜間模式</string>
+    <string name="label_menu_mode_hide">隱藏已讀新聞</string>
+    <string name="splash_ver">版本:%1$s</string>
+    <string name="splash_foot">www.poponews.com</string>
+    <string name="webview_readsource">閱讀原文</string>
+
+    <!-- emo names -->
+    <string name="label_amaze">吃驚</string>
+    <string name="label_move">感動</string>
+    <string name="label_angry">火大</string>
+    <string name="label_happy">高興</string>
+    <string name="label_sad">難過</string>
+    <string name="label_worry">擔憂</string>
+
+    
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_pull_label">Pull to get the latest news...</string>
+    <string name="pull_to_refresh_tap_label">Pull to get the latest news...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading News...</string>
+    
+    <string name="pull_to_refresh">下拉下載最新新聞</string>
+	<string name="release_to_refresh">重新整理</string>
+	<string name="refreshing">更新新聞中</string>
+	<string name="not_updated_yet">Never Udpate</string>
+	<string name="updated_at">Last update at %1$s ago</string>
+	<string name="updated_just_now">Just updated</string>
+	<string name="time_error">Load failed.</string>
+	
+	<string name="minute"> minute</string>
+	<string name="hour"> hour</string>
+	<string name="day"> day</string>
+	<string name="month"> month</string>
+	<string name="year"> year</string>
+
+	<!-- settings main-->
+    <string name="set_feed">新聞推送</string>
+    <string name="set_edition">國家和語言</string>
+    <string name="set_clean">清除暫存</string>
+    <string name="set_suggest">意見反應</string>
+    <string name="set_store">精彩應用</string>
+    <string name="set_about">關於</string>
+    
+	<string name="dialog_update_title">更新</string>
+    <string name="dialog_update_progress_title">更新進度</string>
+    <string name="dialog_update_text">檢查到新版本\n是否更新?</string>
+    <string name="dialog_update_text2">升級版本到%1$s</string>
+    
+    <string name="dialog_fav_title">我的收藏</string>
+    <string name="dialog_fav_text">移除這些收藏?</string>
+    <string name="dialog_yes">好</string>
+    <string name="dialog_no">取消</string>
+    <string name="dialog_clean">清理中</string>
+
+    <string name="fav_delete">是否移除這些收藏？</string>
+    <string name="fav_share">請選擇要分享的收藏</string>
+    
+    <string name="update_skip">跳過</string>
+    
+    <string name="offline_setting_title">離線設定</string>
+    <string name="offline_select_category">選擇類別</string>
+    <string name="offline_select_all">全選</string>
+    <string name="offline_download_pic">下載圖片</string>
+    <string name="offline_download_time">定時離線下載</string>
+    <string name="dialog_offline_time_title">設定時間</string>
+    <string name="offline_download_empty">請選擇一個類別</string>
+    <string name="offline_download_finish">離線下載完成</string>
+    <string name="feedback_info">請輸入建議:</string>
+    <string name="feedback_send">發送</string>
+    
+    <string name="notification_title">你收到一條新的新聞訂閱。</string>
+    <string name="feed_is_empty">目前沒有訂閱的新聞</string>
+    <string name="feedback_sent">反饋已發送</string>
+
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自PoPoNews %2$s）</string>
+    <string name="dialog_share_close">關閉</string>
+    <string name="dialog_share_title">分享</string>
+    <string name="social_select_category">選擇類別</string>
+    <string name="facebook_name">Facebook</string>
+    <string name="twitter_name">Twitter</string>
+    <string name="google_name">Google</string>
+    <string name="tabs_discovery">發現</string>
+    <string name="tabs_me">我</string>
+    <string name="tabs_news">新聞</string>
+    <string name="tabs_video">影音</string>
+    <string name="clicklogin">點擊登入</string>
+    <string name="load_social_channel">下載中...</string>
+    <string name="category_setting_done">完成</string>
+    <string name="category_setting_edit">編輯</string>
+    <string name="set_video">自動播放影音</string>
+    <string name="share_fail">分享失敗</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_not_install">請先安裝微信APP.</string>
+    <string name="fav_select_empty">請勾選要刪除的收藏。</string>
+    <string name="feedback_empty">請先寫點東西吧！</string>
+    <string name="offline_download_no_network">無網路連接，離線下載停止。</string>
+    <string name="pic_can_save">長按圖片保存</string>
+    <string name="pic_saved">圖片保存於</string>
+    <string name="user_login_error">帳號或密碼有誤</string>
+    <string name="user_register_no">没有帳號?</string>
+    <string name="user_register_now">立即註冊</string>
+    <string name="user_request_timeout">請求超時，请重試</string>
+    <string name="comment_reply">回覆</string>
+    <string name="comment_reply_more">展開更多回覆...</string>
+    <string name="comment_reply_notnull">回覆內容不能為空</string>
+    <string name="comment_tv_hot">熱門評論</string>
+    <string name="comment_tv_more">更多評論</string>
+    <string name="comment_tv_news">最新評論</string>
+    <string name="comment_tv_nomore">暫無評論</string>
+    <string name="comment_write">評論</string>
+    <string name="comment_write_news">新增評論</string>
+    <string name="comment_write_notnull">評論內容不能為空</string>
+    <string name="label_menu_account_setting">用戶設定</string>
+    <string name="label_menu_mycomment">與我相關</string>
+    <string name="time_util_before_yesterday">2天前</string>
+    <string name="time_util_hour">小時前</string>
+    <string name="time_util_hours">小時前</string>
+    <string name="time_util_just">剛剛</string>
+    <string name="time_util_minute">分鐘前</string>
+    <string name="time_util_minutes">分鐘前</string>
+    <string name="time_util_yesterday">1天前</string>
+    <string name="user_login">用戶登入</string>
+    <string name="user_login_email">用戶名/信箱</string>
+    <string name="user_login_ok">登入</string>
+    <string name="user_login_please">請先登入喔</string>
+    <string name="user_login_pwd">密碼</string>
+    <string name="user_other_login">還可選擇第三方登入</string>
+    <string name="user_other_login_face">Facebook登入</string>
+    <string name="user_other_login_google">Google登入</string>
+    <string name="user_other_login_twitter">Twitter登入</string>
+    <string name="user_register">註冊</string>
+    <string name="user_register_email">請輸入信箱</string>
+    <string name="user_register_email_no">信箱不能為空</string>
+    <string name="user_register_email_qualified">請輸入正確的信箱</string>
+    <string name="user_register_exists">該信箱已被註冊</string>
+    <string name="user_register_new">註冊新用戶</string>
+    <string name="user_register_pwd">設定密碼(長度必須大於6位數)</string>
+    <string name="user_register_pwd_again">再次確認密碼</string>
+    <string name="user_register_pwd_again_no">請再次確認密碼</string>
+    <string name="user_register_pwd_different">兩次輸入的密碼不一致</string>
+    <string name="user_register_pwd_no">密碼不能為空</string>
+    <string name="user_register_pwd_qualified">密碼長度必須大於6位數</string>
+    <string name="uninteresting_menu_confirm">確定</string>
+    <string name="uninteresting_menu_optional">理由</string>
+    <string name="uninteresting_menu_optional_reason">可選理由，個人化推薦</string>
+    <string name="uninteresting_menu_selected">已選</string>
+    <string name="uninteresting_menu_thank">感謝您的建議</string>
+    <string name="uninteresting_menu_uninterest">不感興趣</string>
+    <string name="user_login_out">退出登入</string>
+    <string name="account_setting_bind">立即綁定</string>
+    <string name="uninteresting_menu_from">來源</string>
+    <string name="uninteresting_menu_quality">內容品質差</string>
+    <string name="uninteresting_menu_again">重複、舊聞</string>
+    <string name="user_register_agree">我已閱讀並同意</string>
+    <string name="user_register_privacy">用戶隱私協議</string>
+    <string name="comment_mine">我的評論</string>
+    <string name="account_setting_unbind">解除綁定</string>
+    <string name="account_setting_unlogin">未登入</string>
+    <string name="account_setting_bind_error">綁定失敗</string>
+    <string name="account_setting_unbind_error">解綁失敗</string>
+    <string name="about_me_reply">回覆了我</string>
+    <string name="about_me_reply_me">回覆我的評論</string>
+</resources>

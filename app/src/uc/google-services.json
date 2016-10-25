@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "721498651063",
+    "project_id": "modern-vortex-137723"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721498651063:android:25a79193e9fc7923",
+        "android_client_info": {
+          "package_name": "com.poponews.global"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl74iQ392HBpXTtE7Fpejv167azFzKWmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-59522043-8"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

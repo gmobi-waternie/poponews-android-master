@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:icon="@drawable/set_feed"
+        android:key="@string/key_feed"
+        android:layout="@layout/preference_switch_night"
+        android:title="@string/set_feed" />
+    <PreferenceScreen
+        android:icon="@drawable/set_edition"
+        android:layout="@layout/preference_screen_night"
+        android:title="@string/set_edition" >
+        <intent android:action="com.gmobi.intent.action.EDITION"/>
+    </PreferenceScreen>
+    <Preference
+        android:icon="@drawable/set_clean"
+        android:key="@string/key_clean"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/set_clean" />
+    <PreferenceScreen
+        android:fragment="com.gmobi.poponews.cases.setting.FeedBackFragment"
+        android:icon="@drawable/set_suggest"
+        android:layout="@layout/preference_screen_night"
+        android:title="@string/set_suggest" />
+    <PreferenceScreen
+        android:fragment="com.gmobi.poponews.cases.setting.AboutFragment"
+        android:icon="@drawable/set_about"
+        android:layout="@layout/preference_screen_night"
+        android:title="@string/set_about" />
+</PreferenceScreen>

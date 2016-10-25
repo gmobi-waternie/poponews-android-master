@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_refresh_head"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip" 
+    android:background="@color/bg_black_night">
+
+    <LinearLayout
+        android:layout_width="250dip"
+        android:layout_height="60dip"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="3"
+            >
+            <ImageView 
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/arrow"
+                />
+            
+            <ImageView
+                android:id="@+id/progress_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:visibility="gone"/>
+            
+            <!-- ProgressBar 
+                android:id="@+id/progress_bar"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                /-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="30"
+		>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+                android:text="@string/pull_to_refresh" 
+                android:textColor="@color/bg_white_night"/>
+
+            <TextView
+                android:id="@+id/updated_at"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:gravity="center_horizontal|top"
+                android:text="@string/updated_at" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_black">
+    <com.gmobi.poponews.widget.TouchImageView
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+
+    	android:id="@+id/image_news_photo"
+    	android:layout_margin="8dp"
+		android:scaleType="fitCenter"
+
+
+        />
+        
+       <TextView
+	        android:layout_width="match_parent"
+	    	android:layout_height="@dimen/article_news_image_desc_height"
+	    	android:id="@+id/image_news_des"
+
+	    	android:layout_marginLeft="4dp"
+	    	android:layout_marginRight="4dp"
+	    	android:layout_marginBottom="10dp"
+	    	android:textSize="16sp"
+	    	android:maxLines="5"
+	    	android:scrollbars="vertical" 
+	    	android:textColor="@color/bg_white"
+	    	android:lineSpacingExtra="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="#77222222"
+    	
+        />     
+
+</RelativeLayout>

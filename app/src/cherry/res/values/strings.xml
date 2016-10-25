@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Info Center</string>
+    <string name="app_title">Info Center</string>
+
+    <string name="share_subject">Shared From Info Center</string>
+    <string name="splash_foot">www.infocenter.com</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（Share From Info Center %2$s）</string>
+    <string name="facebook_app_id" translatable="false">1128383237183156</string>
+
+</resources>

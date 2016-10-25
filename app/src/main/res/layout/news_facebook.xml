@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffffff"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/bg_white"
+        android:divider="@null"
+        >
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/expression_happy_selected"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffffff">
+
+        <RefreshableView
+            android:id="@+id/refreshable_facebook_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+
+            <ListView
+                android:id="@+id/lv_postlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white"
+                android:divider="@null"
+                />
+
+        </RefreshableView>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+   
+

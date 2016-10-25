@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.gmobi.poponews.cases.main.MainActivity">
+
+
+    <View
+        android:id="@+id/statusBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <SurfaceView android:layout_width="0dp" android:layout_height="0dp"/>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0"/>
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="46dp"
+                >
+
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_widget"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tab_bg_color"
+                    android:divider="@null"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_above="@android:id/tabs"
+                    android:background="@color/main_tab_top_divider"
+                    android:id="@+id/main_tab_top_divider"
+
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </TabHost>
+
+
+    <!--FrameLayout
+        android:id="@+id/fl_menu_left"
+        android:layout_width="@dimen/setting_menu_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/menu_item_background">
+
+        <fragment
+            android:id="@+id/drawer_menu_left"
+            android:name="com.gmobi.poponews.cases.setting.LeftSlideMenuFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout-->
+
+
+</LinearLayout>

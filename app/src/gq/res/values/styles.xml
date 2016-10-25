@@ -1,0 +1,218 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="CtgCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ctg_checkbox_selectors</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:height">35dp</item>
+    </style>
+
+    <style name="OfflineCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:drawableRight">@drawable/fav_checkbox_selectors</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+
+    <style name="TabTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="SettingTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bg_black</item>
+    </style>
+
+
+    <style name="NewsTitleStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/list_title_black</item>
+    </style>
+
+    <style name="NewsFeaturedStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="NewsSourceStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/list_source_grey</item>
+    </style>
+
+    <style name="NewsTimeStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/list_time_grey</item>
+    </style>
+
+    <style name="EmoNumStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bg_black</item>
+    </style>
+
+    <style name="DialogTitleStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="DialogTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="UpdateTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/splash_update</item>
+    </style>
+
+    <style name="UpdateButtonStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="UpdateTitleStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/splash_update</item>
+    </style>
+
+    <style name="IndicatorStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+
+    <style name="OfflineTitleStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/bg_grey</item>
+    </style>
+
+    <style name="OfflineTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/bg_black</item>
+    </style>
+
+    <style name="OfflineTextInvalidStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/bg_grey</item>
+    </style>
+    
+    <style name="FeedbackTextStyle">
+        <item name="android:textColor">@color/bg_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="FeedTextStyle">
+        <item name="android:textColor">@color/bg_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="PopoDialogStyle" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/window_box</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Widget"></style>
+
+    <style name="Widget.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <style name="Widget.ProgressBar.RegularProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:maxHeight">10dip</item>
+    </style>
+
+
+    <style name="FavCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/fav_checkbox_selectors</item>
+    </style>
+
+    <style name="dialog_animstyle">
+        <item name="android:windowEnterAnimation">@anim/dialogwindow_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialogwindow_out_anim</item>
+    </style>
+
+    <style name="SimpleActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:height">42dp</item>
+        <item name="android:displayOptions">showTitle|homeAsUp</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+    
+        <style name="SimpleActionBarNight" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/bg_white_night</item>
+        <item name="android:height">42dp</item>
+        <item name="android:displayOptions">showTitle|homeAsUp</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/bg_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/press_red</item>
+    </style>
+
+
+    
+    
+	<style name="AppSunTheme" parent="@android:style/Theme">
+	    <item name="bgRedColorValue">@color/bg_red</item>
+	    <item name="bgDarkRedColorValue">@color/bg_dark_red</item>
+	    <item name="bgYellowColorValue">@color/bg_yellow</item>
+	    <item name="bgGreyColorValue">@color/bg_grey</item>
+	    <item name="bgBlackColorValue">@color/bg_black</item>
+	    <item name="bgWhiteColorValue">@color/bg_white</item>
+	
+	    
+	    <item name="textWhiteColorValue">@color/bg_white</item>
+	    <item name="textBlackColorValue">@color/bg_black</item>
+	    <item name="textGreyColorValue">@color/bg_grey</item>
+
+	</style>  
+	<style name="AppNightTheme" parent="@android:style/Theme">  
+	    <item name="bgRedColorValue">@color/bg_red</item>
+	    <item name="bgDarkRedColorValue">@color/bg_dark_red</item>
+	    <item name="bgYellowColorValue">@color/bg_yellow</item>
+	    <item name="bgGreyColorValue">@color/bg_grey</item>
+	    <item name="bgBlackColorValue">@color/bg_black</item>
+	    <item name="bgWhiteColorValue">@color/bg_white</item>
+	
+	    
+	    <item name="textWhiteColorValue">@color/bg_white</item>
+	    <item name="textBlackColorValue">@color/bg_black</item>
+	    <item name="textGreyColorValue">@color/bg_grey</item>  
+	</style>  
+	
+	
+</resources>

@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="main_menu">
+
+    <Preference
+        android:icon="@drawable/set_clean"
+        android:key="@string/key_clean"
+        android:layout="@layout/preference_normal"
+        android:title="@string/set_clean" />
+    <PreferenceScreen
+        android:fragment="com.gmobi.poponews.cases.setting.FeedBackFragment"
+        android:icon="@drawable/set_suggest"
+        android:layout="@layout/preference_screen"
+        android:title="@string/set_suggest" />
+    <PreferenceScreen
+        android:fragment="com.gmobi.poponews.cases.setting.AboutFragment"
+        android:icon="@drawable/set_about"
+        android:layout="@layout/preference_screen"
+        android:title="@string/set_about" />
+</PreferenceScreen>

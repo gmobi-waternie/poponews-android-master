@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "1044415318264",
+    "project_id": "poponews-release-0728"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044415318264:android:25a79193e9fc7923",
+        "android_client_info": {
+          "package_name": "com.poponews.global"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044415318264-j294kg7vj2p6dg43gaermeqe1aj25ijk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poponews.global",
+            "certificate_hash": "8D150EC618B4ACD045C67D2B3089A543BBD623C2"
+          }
+        },
+        {
+          "client_id": "1044415318264-d2stq9fgo0acp9qe28o3a5i4qtlj8ohj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1rz9SLFLYlPan4zXDOK_Kvjdr-f3WRaU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-59522043-8"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

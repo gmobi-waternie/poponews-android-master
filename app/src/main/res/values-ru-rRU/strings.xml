@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mySmartFeed</string>
+    <string name="app_title">mySmartFeed</string>
+    <string name="action_settings">Настройки</string>
+    <string name="left_drawer_hint_open">Открыть панель</string>
+    <string name="left_drawer_hint_close">Закрыть панель</string>
+    <string name="action_menu_category">Категории</string>
+    <string name="title_error">Ошибка</string>
+    <string name="error_to_load_data">Ошибка загрузки данных!</string>
+    <string name="button_ok">OK</string>
+    <string name="main_loading">Загрузка новостей...</string>
+    <string name="store_loading">Загрузка витрины...</string>
+    <string name="add_favorite">Добавить в избранные.</string>
+    <string name="remove_favorite">Удалить из избранных.</string>
+    <string name="share_title">Поделиться</string>
+    <string name="share_subject">Отправлено из mySmartFeed</string>
+    <string name="setting_nightmode">Ночной режим</string>
+    <string name="setting_fontsize">Размер шрифта</string>
+    <string name="setting_nointerested">Не интересно</string>
+    <string name="press_back_again">Нажмите еще раз для выхода.</string>
+    
+    <string name="ctg_cannot_all_clear">Оставьте хотя бы одну категорию.</string>
+    <string name="label_menu_fav">Мои Избранные</string>
+    <string name="label_menu_feed">Новостная лента</string>
+    <string name="label_menu_histroy">Недавно прочитанные</string>
+    
+    <string name="label_menu_download">Offline загрузка</string>
+    <string name="label_menu_config">Настройки</string>
+    <string name="label_menu_mode_night">Ночной режим</string>
+    <string name="label_menu_mode_hide">Скрыть прочитанное</string>
+    <string name="splash_ver">Версия: %1$s</string>
+    <string name="splash_foot">www.poponews.com</string>
+    <string name="webview_readsource">ЧИТАТЬ ЭТУ СТАТЬЮ В WEB</string>
+
+    <!-- emo names -->
+    <string name="label_amaze">Удивлен</string>
+    <string name="label_move">Взволнован</string>
+    <string name="label_angry">Зол</string>
+    <string name="label_happy">Счастлив</string>
+    <string name="label_sad">Грустен</string>
+    <string name="label_worry">Озабочен</string>
+
+    
+    <string name="pull_to_refresh_release_label">Нажмите для обновления...</string>
+    <string name="pull_to_refresh_pull_label">Нажмите для получения свежих новостей...</string>
+    <string name="pull_to_refresh_tap_label">Нажмите для получения свежих новостей...</string>
+    <string name="pull_to_refresh_refreshing_label">Загрузка новостей...</string>
+    
+    <string name="pull_to_refresh">Нажмите для получения свежих новостей...</string>
+	<string name="release_to_refresh">Нажмите для обновления...</string>
+	<string name="refreshing">Обновление новостей...</string>
+	<string name="not_updated_yet">Не обновлено</string>
+	<string name="updated_at">Последнее обновление %1$s назад</string>
+	<string name="updated_just_now">Только что обновлено</string>
+	<string name="time_error">Ошибка загрузки.</string>
+	
+	<string name="minute"> минута</string>
+	<string name="hour"> час</string>
+	<string name="day"> день</string>
+	<string name="month"> месяц</string>
+	<string name="year"> год</string>
+
+
+    <!-- settings main-->
+    <string name="set_feed">Новостные ленты</string>
+    <string name="set_edition">Редакция</string>
+    <string name="set_clean">Очистить кэш</string>
+    <string name="set_suggest">Обратная связь</string>
+    <string name="set_store">Предложения</string>
+    <string name="set_about">О приложении</string>
+    
+    <string name="dialog_update_title">Обновить</string>
+    <string name="dialog_update_progress_title">Обновление</string>
+    <string name="dialog_update_text">Найдена новая версия. \nОбновить?</string>
+    <string name="dialog_update_text2">Обновить до версии %1$s</string>
+    
+    <string name="dialog_fav_title">Избранное</string>
+    <string name="dialog_fav_text">Удалить из Избранного?</string>
+    <string name="dialog_yes">Да</string>
+    <string name="dialog_no">Отмена</string>
+    <string name="dialog_clean">Очистка</string>
+
+    <string name="fav_delete">Хотите убрать это из Избранного?</string>
+    <string name="fav_share">Выберите новости, чтобы поделиться.</string>
+    
+    <string name="update_skip">Пропустить</string>
+    
+    <string name="offline_setting_title">Offline настройки</string>
+    <string name="offline_select_category">Выберите категорию</string>
+    <string name="offline_select_all">Все</string>
+    <string name="offline_download_pic">Загрузить картинки</string>
+    <string name="offline_download_time">Прогресс Offline загрузки</string>
+    <string name="dialog_offline_time_title">Установить время</string>
+    <string name="offline_download_empty">Сначала выберите одну категорию</string>
+    <string name="offline_download_finish">Offline загрузка окончена</string>
+    <string name="feedback_info">Ваш отзыв:</string>
+    <string name="feedback_send">Отправить</string>
+    
+    <string name="notification_title">Вы получили новую ленту.</string>
+    <string name="feed_is_empty">Новостная лента пустая.</string>
+    <string name="feedback_sent">Ваш отзыв отправлен.</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（Share From mySmartFeed %2$s）</string>
+    <string name="dialog_share_close">Close</string>
+    <string name="dialog_share_title">Share</string>
+    <string name="social_select_category">Select Category</string>
+    <string name="facebook_name">Facebook</string>
+    <string name="twitter_name">Twitter</string>
+    <string name="google_name">Google</string>
+    <string name="tabs_me">Me</string>
+    <string name="tabs_discovery">Discover</string>
+    <string name="tabs_news">News</string>
+    <string name="tabs_video">Video</string>
+    <string name="clicklogin">Sign in</string>
+    <string name="load_social_channel">Loading...</string>
+    <string name="category_setting_done">Done</string>
+    <string name="category_setting_edit">Edit</string>
+    <string name="set_video">Video Autoplay</string>
+    <string name="share_fail">Share failed.</string>
+    <string name="share_success">Share success.</string>
+    <string name="share_not_install">Please install wechat app first.</string>
+    <string name="fav_select_empty">No favorites selected.</string>
+    <string name="feedback_empty">Write something please.</string>
+    <string name="offline_download_no_network">Network error.Offline download stop.</string>
+    <string name="pic_can_save">Long press to save</string>
+    <string name="pic_saved">Picture saved to</string>
+    <string name="comment_reply">Reply</string>
+    <string name="comment_reply_more">More replies</string>
+    <string name="comment_reply_notnull">Write something please.</string>
+    <string name="comment_write_notnull">Write something please.</string>
+    <string name="comment_tv_hot">Hot comments</string>
+    <string name="comment_tv_news">Recent comments</string>
+    <string name="comment_tv_more">More comments</string>
+    <string name="comment_tv_nomore">No comments for now.</string>
+    <string name="comment_write">Comments</string>
+    <string name="comment_write_news">New comments</string>
+    <string name="label_menu_mycomment">About Me</string>
+    <string name="label_menu_account_setting">Account Setting</string>
+    <string name="user_login">Sign in</string>
+    <string name="user_login_email">Username/Email</string>
+    <string name="user_login_pwd">Password</string>
+    <string name="user_login_ok">Sign in</string>
+    <string name="user_login_please">Sign in first.</string>
+    <string name="user_other_login">Third-parterner</string>
+    <string name="user_other_login_face">Facebook</string>
+    <string name="user_other_login_twitter">Twitter</string>
+    <string name="user_other_login_google">Google</string>
+    <string name="user_register">Sign up.</string>
+    <string name="time_util_minute">minute ago</string>
+    <string name="time_util_just">Just now</string>
+    <string name="time_util_hour">hour ago</string>
+    <string name="time_util_yesterday">1 day ago</string>
+    <string name="time_util_before_yesterday">2 days ago</string>
+    <string name="time_util_hours">hours ago</string>
+    <string name="time_util_minutes">minutes ago</string>
+    <string name="user_login_error">Account or password is incorrect.</string>
+    <string name="user_register_no">Don\'t have an account?</string>
+    <string name="user_register_now">Sign up now</string>
+    <string name="user_request_timeout">Request timeout. Please try again.</string>
+    <string name="user_register_email">Enter your email address</string>
+    <string name="user_register_email_no">Email can\'t be blank.</string>
+    <string name="user_register_email_qualified">Please enter a valid email address.</string>
+    <string name="user_register_exists">This email already exists.</string>
+    <string name="user_register_new">Register new account</string>
+    <string name="user_register_pwd">Enter password(at least 6 characters)</string>
+    <string name="user_register_pwd_again">Re-enter password</string>
+    <string name="user_register_pwd_again_no">Please re-enter password</string>
+    <string name="user_register_pwd_different">Passwords do not match. Please try again.</string>
+    <string name="user_register_pwd_no">Password can\'t be blank.</string>
+    <string name="user_register_pwd_qualified">Minimum password length is 6 characters.</string>
+    <string name="uninteresting_menu_confirm">Determine</string>
+    <string name="uninteresting_menu_optional">Reason</string>
+    <string name="uninteresting_menu_optional_reason">Optional reason, precise shield</string>
+    <string name="uninteresting_menu_selected">Selected</string>
+    <string name="uninteresting_menu_thank">Thanks for your feedback.</string>
+    <string name="uninteresting_menu_uninterest">Not interested</string>
+    <string name="user_login_out">Logout</string>
+    <string name="account_setting_bind">Link</string>
+    <string name="uninteresting_menu_again">Repeat, old news</string>
+    <string name="uninteresting_menu_from">Source</string>
+    <string name="uninteresting_menu_quality">Poor-quality content</string>
+    <string name="user_register_privacy">User privacy agreement</string>
+    <string name="user_register_agree">I have read and agree</string>
+    <string name="comment_mine">My Comments</string>
+    <string name="account_setting_unbind">Unlink</string>
+    <string name="account_setting_unlogin">Unlogin</string>
+    <string name="account_setting_bind_error">Bind fails</string>
+    <string name="account_setting_unbind_error">Unbind fail</string>
+    <string name="about_me_reply">replied me</string>
+    <string name="about_me_reply_me">replied to my comments</string>
+
+</resources>

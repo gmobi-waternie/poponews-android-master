@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gomax News</string>
+    <string name="app_title">Gomax News</string>
+	
+    <string name="share_subject">Shared From Gomax News</string>
+    
+    <string name="splash_foot">www.gomax.com.my</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（Share From Gomax News %2$s）</string>
+
+</resources>

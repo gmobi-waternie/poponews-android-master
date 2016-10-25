@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="main_menu">
+
+    <PreferenceScreen
+        android:icon="@drawable/set_edition"
+        android:layout="@layout/preference_screen"
+        android:title="@string/set_edition"
+        android:key="@string/key_edition">
+
+        <intent android:action="com.gmobi.intent.action.EDITION"/>
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+    android:icon="@drawable/set_feed"
+    android:key="@string/key_feed"
+    android:layout="@layout/preference_switch"
+    android:title="@string/set_feed"
+    android:defaultValue="true"
+        />
+
+    <CheckBoxPreference
+        android:icon="@drawable/setting_autoplay"
+        android:key="@string/key_video"
+        android:layout="@layout/preference_switch"
+        android:title="@string/set_video" />
+
+    <Preference
+        android:icon="@drawable/set_clean"
+        android:key="@string/key_clean"
+        android:layout="@layout/preference_normal"
+        android:title="@string/set_clean" />
+    <PreferenceScreen
+        android:fragment="com.gmobi.poponews.cases.setting.FeedBackFragment"
+        android:icon="@drawable/set_suggest"
+        android:layout="@layout/preference_screen"
+        android:title="@string/set_suggest" />
+    <PreferenceScreen
+        android:fragment="com.gmobi.poponews.cases.setting.AboutFragment"
+        android:icon="@drawable/set_about"
+        android:layout="@layout/preference_screen"
+        android:title="@string/set_about" />
+</PreferenceScreen>

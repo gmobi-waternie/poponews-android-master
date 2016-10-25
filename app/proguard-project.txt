@@ -1,0 +1,118 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepattributes *Annotation*
+-keepattributes InnerClasses
+-ignorewarnings
+-dontskipnonpubliclibraryclassmembers
+
+-keepclassmembers class *{
+    @android.webkit.JavascriptInterface  *;
+}
+-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+   public *;
+}
+
+-keep public class com.gmobi.poponews.widget.*{
+	public protected private *;
+}
+
+-keep public class com.gmobi.poponews.model.*{
+	public protected private *;
+}
+
+-keep public class com.mobeta.android.dslv.*{
+	public protected private *;
+}
+
+-keep public class com.gmobi.poponews.outlet.*{
+	public protected private *;
+}
+
+-keep public class com.gmobi.poponews.service.SocialHttpService{
+	public protected private *;
+}
+
+-dontwarn android.support.v4.**     
+-keep class android.support.v4.** { *; }   
+-keep interface android.support.v4.app.** { *; }   
+-keep public class * extends android.support.v4.**   
+-keep public class * extends android.app.Fragment 
+
+-dontwarn android.support.v13.**
+-dontwarn android.content.pm.**
+-keep class android.support.v13.** { *; }   
+-keep interface android.support.v13.app.** { *; }   
+-keep public class * extends android.support.v13.**
+
+-dontnote android.webkit.JavascriptInterface
+#
+#-keep public class com.reach.* {
+#    public protected *;
+#}
+#
+#
+#-keep public class android.content.pm.* {
+#    public protected *;
+#}
+#
+## Preserve all .class method names.
+#
+#-keepclassmembernames class * {
+#    java.lang.Class class$(java.lang.String);
+#    java.lang.Class class$(java.lang.String, boolean);
+#}
+#
+## Preserve all native method names and the names of their classes.
+#
+#-keepclasseswithmembernames class * {
+#    native <methods>;
+#}
+
+
+-keep public class com.reach.* {
+    public protected *;
+}
+
+-keep public class com.reach.widget.* {
+    public protected *;
+}
+
+-keepclassmembers public class * extends com.reach.IService {
+    public <init>(...);
+}
+
+-keepclassmembers public class * extends com.reach.IActivity {
+    public <init>(...);
+}
+
+-keep public class * extends com.reach.IService
+
+-keep class com.tencent.mm.sdk.** {
+   *;
+}
+
+-keep class com.similarweb.** { *; }
+
+-dontwarn com.flurry.sdk.i
+-dontwarn com.flurry.android.tumblr.*
+-dontwarn com.google.android.gms.**
+

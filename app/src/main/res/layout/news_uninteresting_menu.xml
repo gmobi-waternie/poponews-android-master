@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--android:background="@drawable/news_item_popup_shape"-->
+    <TextView
+        android:id="@+id/tv_news_item_confirm"
+        style="@style/NewsFeaturedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_news_item_close_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/uninteresting_menu_uninterest" />
+    <!--<LinearLayout-->
+        <!--android:layout_width="@dimen/menu_interesting_layout"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/news_item_popup_shape">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/menu_interesting_layout"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="@dimen/menu_interesting_layout_item"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_news_item_num"-->
+                    <!--style="@style/FeedTextStyle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="12dp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="@string/uninteresting_menu_optional_reason" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="@dimen/menu_interesting_layout_item"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_news_item_confirm"-->
+                    <!--style="@style/NewsFeaturedStyle"-->
+                    <!--android:layout_width="@dimen/article_news_image_desc_height"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:background="@drawable/btn_news_item_close_selector"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:paddingLeft="8dp"-->
+                    <!--android:paddingRight="8dp"-->
+                    <!--android:text="@string/uninteresting_menu_uninterest" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="@dimen/menu_interesting_layout"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_reason_left"-->
+                <!--android:layout_width="@dimen/menu_interesting_layout_item"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_reason_right"-->
+                <!--android:layout_width="@dimen/menu_interesting_layout_item"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

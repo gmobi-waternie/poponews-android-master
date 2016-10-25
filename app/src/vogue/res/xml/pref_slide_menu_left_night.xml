@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:icon="@drawable/sidebar_myfavorites"
+        android:key="@string/menu_key_fav"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/label_menu_fav">
+        <intent android:action="com.gmobi.intent.action.FAVORITE" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/sidebar_newsfeeds"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/label_menu_feed"
+        android:key="@string/menu_key_feed"> 
+  		<intent android:action="com.gmobi.intent.action.FEED" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/sidebar_recentlyread"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/label_menu_histroy">
+        <intent android:action="com.gmobi.intent.action.HISTORY" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/sidebar_offlinedownload"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/label_menu_download">
+        <intent android:action="com.gmobi.intent.action.OFFLINE" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:icon="@drawable/set_store"
+        android:key="@string/key_store"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/set_store" />
+    <PreferenceScreen
+        android:icon="@drawable/sidebar_settings"
+        android:layout="@layout/preference_normal_night"
+        android:title="@string/label_menu_config">
+
+        <intent android:action="com.gmobi.intent.action.SETTING">
+            <extra
+                android:name=":android:show_fragment"
+                android:value="com.gmobi.poponews.cases.setting.MainSettingFragment" />
+            <extra
+                android:name=":android:show_fragment_title"
+                android:value="@string/label_menu_config" />
+            <extra
+                android:name=":android:no_headers"
+                android:value="true" />
+        </intent>
+    </PreferenceScreen>
+
+</PreferenceScreen>

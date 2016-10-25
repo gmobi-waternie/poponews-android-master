@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">mySmartFeed</string>
+    <string name="app_title">mySmartFeed</string>
+    <string name="action_settings">设置</string>
+    <string name="left_drawer_hint_open">打开</string>
+    <string name="left_drawer_hint_close">关闭</string>
+    <string name="action_menu_category">类别</string>
+    <string name="title_error">错误</string>
+    <string name="error_to_load_data">新闻更新失败！\n请检测网络状态</string>
+    <string name="button_ok">确定</string>
+    <string name="main_loading">加载新闻...</string>
+    <string name="store_loading">加载中...</string>
+    <string name="add_favorite">已加入收藏</string>
+    <string name="remove_favorite">已从收藏中移除</string>
+    <string name="share_title">分享至</string>
+    <string name="share_subject">来自mySmartFeed分享</string>
+    <string name="setting_nightmode">夜间模式</string>
+    <string name="setting_fontsize">字体大小</string>
+    <string name="setting_nointerested">不感兴趣</string>
+    <string name="press_back_again">再按一次退出应用</string>
+    <string name="ctg_cannot_all_clear">请至少保留一个类别</string>
+    <string name="label_menu_fav">我的收藏</string>
+    <string name="label_menu_feed">最新订阅</string>
+    <string name="label_menu_histroy">最近阅读</string>
+    <string name="label_menu_download">离线下载</string>
+    <string name="label_menu_config">设置</string>
+    <string name="label_menu_mode_night">夜间模式</string>
+    <string name="label_menu_mode_hide">隐藏已读新闻</string>
+    <string name="splash_ver">版本: %1$s</string>
+    <string name="splash_foot">www.mysmartfeed.com</string>
+    <string name="webview_readsource">阅读原文</string>
+
+    <!-- emo names -->
+    <string name="label_amaze">吃惊</string>
+    <string name="label_move">感动</string>
+    <string name="label_angry">火大</string>
+    <string name="label_happy">高兴</string>
+    <string name="label_sad">难过</string>
+    <string name="label_worry">担忧</string>
+
+    
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_pull_label">Pull to get the latest news...</string>
+    <string name="pull_to_refresh_tap_label">Pull to get the latest news...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading News...</string>
+    
+    <string name="pull_to_refresh">下拉获取最新新闻</string>
+	<string name="release_to_refresh">释放刷新</string>
+	<string name="refreshing">更新新闻中</string>
+	<string name="not_updated_yet">Never Udpate</string>
+	<string name="updated_at">Last update at %1$s ago</string>
+	<string name="updated_just_now">Just updated</string>
+	<string name="time_error">Load failed.</string>
+	
+	<string name="minute"> minute</string>
+	<string name="hour"> hour</string>
+	<string name="day"> day</string>
+	<string name="month"> month</string>
+	<string name="year"> year</string>
+
+	<!-- settings main-->
+    <string name="set_feed">新闻推送</string>
+    <string name="set_edition">国家和语言</string>
+    <string name="set_clean">清理缓存</string>
+    <string name="set_suggest">意见反馈</string>
+    <string name="set_store">精彩应用</string>
+    <string name="set_about">关于</string>
+    
+    
+    <string name="dialog_update_title">更新</string>
+    <string name="dialog_update_progress_title">更新进度</string>
+    <string name="dialog_update_text">检查到新版本 \n是否更新?</string>
+    <string name="dialog_update_text2">升级版本到%1$s</string>
+    
+    <string name="dialog_fav_title">我的收藏</string>
+    <string name="dialog_fav_text">移除这些收藏?</string>
+    <string name="dialog_yes">好</string>
+    <string name="dialog_no">取消</string>
+    <string name="dialog_clean">清理中</string>
+
+    <string name="fav_delete">是否移除这些收藏？</string>
+    <string name="fav_share">请先选择要分享的收藏</string>
+    
+    <string name="update_skip">跳过</string>
+
+    
+
+    <string name="offline_setting_title">离线设置</string>
+    <string name="offline_select_category">选择类别</string>
+    <string name="offline_select_all">全选</string>
+    <string name="offline_download_pic">下载图片</string>
+    <string name="offline_download_time">定时离线下载</string>
+    <string name="dialog_offline_time_title">设置时间</string>
+    <string name="offline_download_empty">请先选择一个类别</string>
+    <string name="offline_download_finish">离线下载完成</string>
+
+    <string name="feedback_info">请输入反馈:</string>
+    <string name="feedback_send">发送</string>
+    
+    <string name="notification_title">你收到一条新的订阅新闻。</string>
+    <string name="feed_is_empty">目前没有订阅的新闻</string>
+    <string name="feedback_sent">反馈已发送</string>
+
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自mySmartFeed %2$s）</string>
+</resources>

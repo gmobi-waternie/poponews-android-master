@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="view_bg" format="reference|color"/>
+    <attr name="text_bg" format="reference|color"/>
+
+    <attr name="listview_bg" format="reference|color"/>
+    <attr name="red_bg" format="reference|color"/>
+    <attr name="bgGreyColor" format="reference|color"/>
+    <attr name="bgWhiteColor" format="reference|color"/>
+</resources>

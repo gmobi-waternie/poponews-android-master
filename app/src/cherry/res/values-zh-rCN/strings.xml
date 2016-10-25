@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">InfoCenter</string>
+    <string name="app_title">InfoCenter</string>
+   
+    <string name="share_subject">来自InfoCenter分享</string>
+    
+    <string name="splash_foot">www.infocenter.com</string>
+    
+
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自InfoCenter %2$s）</string>
+    
+</resources>

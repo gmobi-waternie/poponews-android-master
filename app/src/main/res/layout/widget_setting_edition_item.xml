@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gmobi.poponews.widget.CheckedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:background="@drawable/country_board"/>
+
+    <CheckedTextView
+        android:id="@+id/ctv_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:checkMark="@drawable/list_choice_indicator_single"
+        android:gravity="center_vertical" 
+        />
+
+</com.gmobi.poponews.widget.CheckedLinearLayout>

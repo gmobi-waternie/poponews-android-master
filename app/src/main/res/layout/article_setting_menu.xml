@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				  android:layout_width="match_parent"
+				  android:layout_height="match_parent"
+				  android:background="#bb000000">
+
+ 	<RelativeLayout 
+ 	    android:layout_width="@dimen/setting_menu_width"
+    	android:layout_height="45dp"
+    	android:id="@+id/rl_nm"
+    	android:layout_marginTop="4dp">
+	 	<TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/setting_nightmode"
+    	style="@style/SettingTextStyle"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginLeft="@dimen/setting_menu_margin"
+        />
+		<CheckBox
+			android:button="@drawable/night_radiobtn_selector"
+			android:layout_height="wrap_content"
+			android:layout_width="60dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="@dimen/setting_menu_margin"
+			android:id="@+id/cb_nightmode"
+		    />
+		
+		
+		
+ 	</RelativeLayout>   
+    
+ 	<View
+ 	    android:id="@+id/setting_divider1" 
+ 	    android:layout_height="1dp"
+		android:layout_width="@dimen/setting_menu_width"
+		android:layout_below="@id/rl_nm"
+		android:layout_marginTop="4dp"
+		android:background="#dddddd"
+ 	    />
+ 	
+ 	<RelativeLayout 
+ 	    android:layout_width="@dimen/setting_menu_width"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/rl_fz"
+    	android:layout_below="@id/setting_divider1"
+    	android:layout_marginTop="6dp">
+	 	<TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/tv_fz"
+    	android:text="@string/setting_fontsize"
+    	style="@style/SettingTextStyle"
+		
+		android:layout_marginLeft="@dimen/setting_menu_margin"
+    	android:layout_alignParentLeft="true"
+    	
+        />
+		<LinearLayout 
+		    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@id/tv_fz"
+    		android:orientation="horizontal"
+    		android:layout_marginTop="@dimen/setting_menu_margin"	
+		    >
+			<ImageButton
+	        android:id="@+id/setting_font_small"
+	        android:src="@drawable/news_more_fontsize_small_normal"
+	        android:layout_centerVertical="true"
+	        android:layout_height="wrap_content"
+	    	android:layout_width="0dp"
+	    	android:layout_weight="1"
+	    	android:background="#00000000"
+	        />
+			<ImageButton
+	        android:id="@+id/setting_font_medium"
+	        android:src="@drawable/news_more_fontsize_middle_selected"
+	        android:layout_centerVertical="true"
+	        android:layout_height="wrap_content"
+	    	android:layout_width="0dp"
+	    	android:layout_weight="1"
+	    	android:background="#00000000"
+	        />
+		    
+			<ImageButton
+	        android:id="@+id/setting_font_large"
+	        android:src="@drawable/news_more_fontsize_big_normal"
+	        android:layout_centerVertical="true"
+	        android:layout_height="wrap_content"
+	    	android:layout_width="0dp"
+	    	android:layout_weight="1"
+	    	android:background="#00000000"
+	        />
+		    
+		</LinearLayout>
+		
+		
+ 	</RelativeLayout>   
+    
+ 	<!-- View
+ 	    android:id="@+id/setting_divider2" 
+ 	    android:layout_height="1dp"
+		android:layout_width="@dimen/setting_menu_width"
+		android:layout_below="@id/rl_fz"
+		android:layout_marginTop="8dp"
+		android:background="#dddddd"
+ 	    />
+ 	
+ 	<RelativeLayout 
+ 	    android:layout_width="@dimen/setting_menu_width"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/rl_ni"
+    	android:layout_below="@id/setting_divider2"
+    	android:layout_marginTop="6dp"
+    	android:layout_marginBottom="6dp">
+	 	<Button
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/setting_nointerested"
+    	style="@style/SettingTextStyle"
+		android:layout_marginLeft="@dimen/setting_menu_margin"
+    	android:layout_alignParentLeft="true"
+    	android:background="#00000000"
+        />
+	</RelativeLayout--> 
+ 	    
+
+ 	
+ 	
+ 	
+</RelativeLayout>

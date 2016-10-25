@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+    	android:layout_height="101dp" 
+    	android:id="@+id/rl_type_regular_1_l"
+    	android:orientation="horizontal"
+	    >
+	    <LinearLayout
+			android:layout_width="match_parent"
+	    	android:layout_height="100dp" 
+	    	android:id="@+id/ll_type_regular_1_l"
+	    	android:orientation="horizontal"
+	    >
+    
+	    <ImageView
+	        android:layout_width="100dp"
+	        android:layout_height="match_parent"
+	        android:id="@+id/news_img"
+	        android:scaleType="fitCenter"
+	        android:layout_marginTop="1dp"
+	        android:layout_marginBottom="1dp"
+	        android:layout_marginLeft="8dp"
+	        />
+	    
+	    <RelativeLayout 
+	       	android:layout_width="0dp"
+    		android:layout_height="match_parent"
+    		android:layout_weight="1">
+    		
+    		<TextView
+    		    android:id="@+id/news_title"
+    		    android:layout_width="match_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginTop="7dp"
+    		    android:layout_marginLeft="14dp"
+    		    android:layout_marginRight="8dp"
+    		    android:maxLines="2"
+    		    android:ellipsize="end"
+    		    style="@style/NewsTitleStyle"
+   		    />    		    
+    		
+    		
+	     </RelativeLayout>
+
+	</LinearLayout>
+	
+	<View
+	       android:layout_width="match_parent"
+	       android:layout_height="1px"
+	       android:layout_below="@id/ll_type_regular_1_l"
+	       android:background="@color/list_divider_grey"
+	       android:layout_marginLeft="8dp"
+	       android:layout_marginRight="8dp"
+	/>
+
+</RelativeLayout>

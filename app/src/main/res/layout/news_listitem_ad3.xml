@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_ad_with_image"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="191dp"
+              android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/iv_ad_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        />
+
+    <FrameLayout
+        android:id="@+id/vpPlayer_listitem3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+            android:id="@+id/news_title_image"
+            style="@style/NewsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/btn_ad_image"
+            style="@style/NewsSourceStyle"
+            android:layout_width="28dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ad"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/rb_ad"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

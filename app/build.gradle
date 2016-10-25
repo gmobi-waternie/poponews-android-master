@@ -1,0 +1,404 @@
+import com.android.builder.core.DefaultManifestParser
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+//apply plugin: 'com.google.gms.google-services'
+
+ext {
+    /**
+     * project settings
+     */
+    PROJECT_NAME = 'POPONEWS'
+    /**
+     * value define
+     */
+    VAL_STR_NULL = 'null'
+    VAL_DATE = new Date()
+    /**
+     * keys in build config
+     */
+    KEY_BUILD_TYPE_STRING = 'String'
+    KEY_BUILD_TYPE_BOOL = 'boolean'
+    KEY_BUILD_TYPE_DOUBLE = 'double'
+    KEY_BUILD_DATE = 'BUILD_DATE'
+    KEY_BUILD_URL = 'BASE_URL'
+    KEY_BUILD_GROUP = 'GROUP'
+    KEY_BUILD_IMAGE = 'IMAGE_SCALE'
+    KEY_BUILD_FB_ID = 'FACEBOOK_ID'
+    KEY_BUILD_FB_NAME = 'FACEBOOK_NAME'
+    KEY_BUILD_DCH = 'DISTRIBUTION_CHANNEL'
+    KEY_BUILD_SDK_FLURRY = 'FLURRY_APIKEY'
+    KEY_BUILD_SDK_APPFLYER = 'APPFLYER_DEVKEY'
+    KEY_BUILD_SDK_FBNATIVELIST = 'FB_NATIVE_LIST'
+    KEY_BUILD_PUSH = 'SUPPORT_PUSH'
+
+}
+
+buildscript {
+    tasks.withType(JavaCompile) { options.encoding = "UTF-8" }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+
+
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    enforceUniquePackageName = true
+
+    signingConfigs {
+        gmobiKey {
+            keyAlias 'gmobi'
+            keyPassword '4gmobi2admin'
+            storeFile file('../release.keystore')
+            storePassword '4gmobi2admin'
+        }
+    }
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        applicationId 'com.gmobi.poponews'
+        ext.enableCrashlytics = false
+        /**
+         * version
+         */
+        def verName = readVersion()
+        versionName verName
+        versionCode genGmobiVerCode(verName)
+        /**
+         * build config
+         */
+
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"${VAL_DATE}\""
+        //buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://test.poponews.net"'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"test"'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_ID, '"1608179009437197"'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+        buildConfigField KEY_BUILD_TYPE_DOUBLE, KEY_BUILD_IMAGE, '0.9'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_ID, '"1608179009437197"'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '""'
+
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_SDK_FLURRY, '"DNZG92RZJXZGB9QDGNVY"'
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_SDK_APPFLYER, '"RCrPVEv5PwqRLVA7AYs6Pe"'
+
+        buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_SDK_FBNATIVELIST, '"1608179009437197_1666024683652629"'
+        buildConfigField KEY_BUILD_TYPE_BOOL, KEY_BUILD_PUSH,'true'
+
+    }
+
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix ''
+        }
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            versionNameSuffix ''
+            signingConfig signingConfigs.gmobiKey
+        }
+
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.assemble.doLast {
+            // move and rename output apk to release folder
+            variant.outputs.each { output ->
+                if (output.zipAlign) {
+                    def ver = "${defaultConfig.versionName}${variant.buildType.versionNameSuffix}"
+                    def release = "${PROJECT_NAME}#${ver}-${output.baseName}.apk"
+                    copy {
+                        from output.outputFile
+                        into "${rootProject.projectDir}/${PROJECT_NAME}#${defaultConfig.versionName}"
+                        rename output.outputFile.name, release
+                    }
+                }
+            }
+        }
+    }
+
+    productFlavors {
+
+
+        gmobi {
+            def appId = 'com.poponews.global'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"global"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+        }
+        gmobitest {
+            def appId = 'com.poponews.global'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"test"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://test.poponews.net"'
+        }
+
+        cherry {
+            def appId = 'com.poponews.cherry'
+            def facebookId = '1128383237183156'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"cherry"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"cherry"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_SDK_FBNATIVELIST, '"1128383237183156_1240748239279988"'
+            buildConfigField KEY_BUILD_TYPE_BOOL, KEY_BUILD_PUSH,'false'
+        }
+
+        uc {
+            def appId = 'com.poponews.global'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"global"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"uc"'
+        }
+        leagoo {
+            def appId = 'com.poponews.global'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"global"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"Leagoo"'
+        }
+        indialocal
+        {
+            def appId = 'com.poponews.global'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"local.india"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"indialocal"'
+        }
+
+        asus {
+            def appId = 'com.poponews.taiwan'
+            def facebookId = '1066707823411276'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DATE, "\"" + genCurValDate() + "\""
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"taiwan"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"asus"'
+
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_SDK_FLURRY, '"NFP686BJ77NHDVNCQSPR"'
+        }
+
+        indonesia {
+            def appId = 'com.poponews.indonesia'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"indonesia"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_URL, '"http://api.poponews.net"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"indonesia"'
+        }
+        mysmartfeed {
+            def appId = 'com.poponews.gmobi2'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"test"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+        }
+        gomax
+                {
+                    def appId = 'com.poponews.global'
+                    def facebookId = '1608179009437197'
+                    applicationId appId
+                    manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+                    buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"test"'
+                    buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"PoPoNews"'
+                    buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_DCH, '"gomax"'
+                }
+        vogue {
+            minSdkVersion 16
+            def appId = 'com.poponews.vogue'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"vogue"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"Vogue"'
+        }
+        gq {
+            minSdkVersion 16
+            def appId = 'com.poponews.gq'
+            def facebookId = '1608179009437197'
+            applicationId appId
+            manifestPlaceholders = [APP_ID: "${appId}", FACEBOOK_ID: "${facebookId}"]
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_GROUP, '"gq"'
+            buildConfigField KEY_BUILD_TYPE_STRING, KEY_BUILD_FB_NAME, '"GQ"'
+        }
+    }
+
+    //useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    //compile 'com.facebook.android:facebook-android-sdk:4.2.0'
+    compile('com.twitter.sdk.android:twitter:1.6.0@aar') {
+        transitive = true;
+    }
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.android.support:recyclerview-v7'
+    compile 'com.android.support:multidex:1.0.0'
+    //compile 'com.google.android.gms:play-services-base:8.1.0'
+    //compile 'com.google.android.gms:play-services-analytics:8.1.0'
+    //compile 'com.google.android.gms:play-services:6.+'
+    //compile 'com.facebook.android:audience-network-sdk:4.+'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile files('libs/AudienceNetwork.jar')
+    compile files('libs/FlurryAnalytics-6.2.0.jar')
+    compile files('libs/javax.inject-1.jar')
+    compile files('libs/libammsdk.jar')
+    //compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/momock.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5043.jar')
+    provided files('libs/android-support-v13.jar')
+    compile files('libs/go2reach.lite_5.1.0.jar')
+    compile files('libs/AF-Android-SDK-v3.3.0.jar')
+   //compile files('libs/Portrait-SDK-3.1.1.jar')
+
+    compile(name: 'cmadsdk_base_world_V3.3.0', ext: 'aar')
+
+
+    compile project(':library')
+    compile project(':weiboSDK')
+    compile project(':facebook')
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+def readVersion() {
+    def manifestParser = new DefaultManifestParser()
+    return manifestParser.getVersionName(android.sourceSets.main.manifest.srcFile);
+}
+
+def genGmobiVerStamp(date, boolean debug) {
+    // generate time stamp eg: yyhhhh@mm
+    def curDate = date.toCalendar()
+    def month = curDate.get(Calendar.MONTH) + 1
+    def hoursOfYear
+
+    if (month > 9)
+        hoursOfYear = month + "" + curDate.get(Calendar.DAY_OF_MONTH).toString()
+    else
+        hoursOfYear = "0" + month + "" + curDate.get(Calendar.DAY_OF_MONTH).toString()
+
+    def stamp = curDate.format('yy') + hoursOfYear.toString().padLeft(4, '0')
+    hoursOfYear
+}
+
+def genCurValDate() {
+    // generate time stamp eg: yyhhhh@mm
+
+    def curDate = VAL_DATE.toCalendar()
+    def year = curDate.get(Calendar.YEAR)
+
+    def month = curDate.get(Calendar.MONTH) + 1
+    if (month < 10)
+        month = "0" + month
+
+    def day = curDate.get(Calendar.DAY_OF_MONTH)
+    if (day < 10)
+        day = "0" + day
+
+    def hour = curDate.get(Calendar.HOUR_OF_DAY)
+    if (hour < 10)
+        hour = "0" + hour
+
+
+    def min = curDate.get(Calendar.MINUTE)
+    if (min < 10)
+        min = "0" + min
+
+    def sec = curDate.get(Calendar.SECOND)
+    if (sec < 10)
+        sec = "0" + sec
+
+    def dataStr
+
+    dataStr = year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec
+    dataStr
+}
+
+def genGmobiVerCode(verName) {
+    // calc version code by version name(eg xx.yy.zz => xxyyzz)
+    def gmVerCode = verName.toString().replace(".", "").toInteger()
+
+    def gmVerCodeArr  =verName.toString().tokenize(".")
+    def newCode=""
+    gmVerCodeArr.each{
+        if(it.toInteger()<10)
+            newCode +="0"+it
+        else
+            newCode +=it
+    }
+
+
+    println "GMOBI Version Code = "+newCode.toInteger()
+    println "GMOBI Version Code = ${gmVerCode}"
+
+    return newCode.toInteger()
+}
+

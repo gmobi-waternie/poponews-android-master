@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="81dp"
+				android:id="@+id/rl_type_regular"
+				android:orientation="horizontal"
+	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:id="@+id/ll_type_regular"
+		android:orientation="horizontal"
+		>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:layout_width="100dp"
+				android:layout_height="60dp"
+				android:id="@+id/post_img"
+				android:scaleType="centerCrop"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="10dp"
+				/>
+
+			<ImageView
+				android:layout_width="100dp"
+				android:layout_height="60dp"
+				android:id="@+id/mask"
+
+				android:src="@drawable/news_weibo"
+				android:scaleType="fitXY"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="10dp"
+				/>
+
+
+		</RelativeLayout>
+
+
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<TextView
+				android:id="@+id/post_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="7dp"
+				android:layout_marginLeft="14dp"
+				android:layout_marginRight="8dp"
+				android:maxLines="2"
+				android:ellipsize="end"
+				style="@style/NewsTitleStyle"
+				/>
+
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="20dp"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginRight="8dp"
+				android:layout_marginBottom="4dp"
+				android:orientation="horizontal"
+				>
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:scaleType="centerCrop"
+					android:layout_marginRight="4dp"
+					android:id="@+id/post_from_avatar"/>
+				<TextView
+					android:id="@+id/post_from_name"
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="0"
+					android:layout_alignParentRight="true"
+					style="@style/NewsTimeStyle"
+					/>
+
+
+			</LinearLayout>
+
+
+
+
+
+
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_below="@id/ll_type_regular"
+		android:background="@color/list_divider_grey"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		></View>
+</RelativeLayout>

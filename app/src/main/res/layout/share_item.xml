@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_share_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share_more"/>
+
+    <TextView
+        android:id="@+id/tv_share_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ellipsize="end"
+
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="bbc"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/bg_black"
+
+        />
+
+
+</LinearLayout>

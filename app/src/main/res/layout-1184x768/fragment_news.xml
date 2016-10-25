@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:arc="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/bg_red">
+
+
+        <TextView
+            android:id="@+id/main_action_bar_title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/app_title"/>
+
+        <ImageButton
+            android:id="@+id/main_action_bar_ctg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:onClick="onClickTitleBtn"
+            android:src="@drawable/navigaton_categorysettings"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_main_action_bar">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <PagerSlidingTabStrip
+            android:id="@+id/slidetabs"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/tab_bg_color"/>
+
+        <ViewPager
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slidetabs"
+            android:background="@color/bg_white_night"
+            />
+
+        <com.capricorn.ArcMenu
+            android:id="@+id/arc_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            arc:fromDegrees="180.0"
+            arc:toDegrees="270.0"
+            android:layout_marginBottom="-415dp"
+            android:layout_marginRight="-330dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            arc:childSize="36dp"
+
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_top_selector"
+            android:id="@+id/btn_top"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_loading"
+                android:text="@string/main_loading"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

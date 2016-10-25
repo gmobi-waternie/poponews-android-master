@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmobi.poponews.cases.main.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/bg_white" >
+
+        <ImageButton
+            android:id="@+id/main_action_bar_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:onClick="onClickTitleBtn"
+            android:src="@drawable/navigation_sidebar" />
+
+        <TextView
+            android:id="@+id/main_action_bar_title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/main_action_bar_setting"
+            android:text="@string/app_title" />
+
+        <ImageButton
+            android:id="@+id/main_action_bar_ctg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:onClick="onClickTitleBtn"
+            android:src="@drawable/navigaton_categorysettings" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_main_action_bar" >
+		
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            >
+			<RelativeLayout 
+			    android:layout_width="match_parent"
+            	android:layout_height="wrap_content" 
+			    >
+			     <PagerSlidingTabStrip
+		        android:id="@+id/slidetabs"
+		        android:layout_width="match_parent"
+		        android:layout_height="42dp"
+		        android:background="@color/bg_black" />
+
+		    	<ViewPager
+		        android:id="@+id/realtabcontent"
+		        android:background="@color/bg_white_night"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/slidetabs"
+		        />
+			    
+			</RelativeLayout>
+           
+
+            <RelativeLayout
+                android:id="@+id/rl_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" 
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:id="@+id/tv_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/iv_loading"
+                        android:text="@string/main_loading" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/setting_menu_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/menu_item_background" 
+            android:id="@+id/fl_menu_left">
+            <fragment
+                android:id="@+id/drawer_menu_left"
+                android:name="com.gmobi.poponews.cases.setting.LeftSlideMenuFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#333333" >
+
+            <RelativeLayout
+                android:id="@+id/rl_menu_categroy_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/action_menu_category"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/iv_ctg_restore"
+                    android:src="@drawable/categorystettings_restore" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/rl_menu_categroy_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_menu_categroy_title"
+                android:layout_marginLeft="20dp"
+                android:background="@color/bg_red" />
+
+            <com.mobeta.android.dslv.DragSortListView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:dslv="http://schemas.android.com/apk/res/com.mobeta.android.dslv"
+                android:id="@+id/menu_listView_r"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/rl_menu_categroy_line"
+                android:layout_margin="3dp"
+                android:choiceMode="multipleChoice"
+                android:dividerHeight="2dp"
+                android:padding="3dp" />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

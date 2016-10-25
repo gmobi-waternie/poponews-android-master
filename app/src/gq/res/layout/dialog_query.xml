@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="vertical"
+        >
+	    	
+
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="0dp"
+		        android:layout_weight="2"
+		        android:text="@string/dialog_update_title"
+		        android:layout_gravity="center"
+		        android:gravity="center"
+		        android:layout_marginTop="20dp"
+		        android:id="@+id/dialog_title"
+		        style="@style/DialogTitleStyle"
+	        />
+	    	
+        
+	    	<LinearLayout
+		        android:id="@+id/dialog_content"
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="3">
+  
+		    	<TextView
+			        android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+			        android:layout_marginLeft="15dp"
+			        android:layout_marginRight="15dp"
+			        android:layout_gravity="center"
+			        android:gravity="center"		        
+			        android:text="@string/dialog_update_text"
+			        android:id="@+id/dialog_message"
+			        style="@style/DialogTextStyle"
+		        />
+  
+   			</LinearLayout>
+	    	
+
+	</LinearLayout>
+	
+    <View
+      	android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="@color/bg_grey"
+        />
+    
+       
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+        >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="horizontal"
+	        >	
+        	<Button
+        	    android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/dialog_yes"
+				android:gravity="center"
+				style="?android:attr/buttonBarButtonStyle"
+				android:id="@+id/positiveButton"
+        	    />
+        	<View
+	      	android:layout_height="fill_parent"
+			android:layout_width="1dp"
+			android:background="@color/bg_grey"
+	        />
+         	<Button
+        	    android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/dialog_no"
+				android:gravity="center"
+				style="?android:attr/buttonBarButtonStyle"
+				android:id="@+id/negativeButton"
+				
+        	    />       	    
+        
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

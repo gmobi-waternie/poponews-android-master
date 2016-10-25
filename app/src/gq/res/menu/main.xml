@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gmobi.poponews.MainActivity" >
+
+    <item
+        android:id="@+id/action_category"
+        android:orderInCategory="1"
+        android:title="@string/action_menu_category"/>
+    
+    <item
+        android:id="@+id/action_vote"
+        android:orderInCategory="2"
+        android:title="@string/action_settings"/>
+
+</menu>

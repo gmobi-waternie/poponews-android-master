@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+        >
+	    	
+
+    	<!-- TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dialog_update_title"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:id="@+id/dialog_title"
+	        android:layout_alignParentTop="true"
+	        style="@style/DialogTitleStyle"
+        /-->
+    	
+	    <RelativeLayout
+	        android:id="@+id/dialog_content"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@id/dialog_title">
+        
+	      	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/dialog_update_text2"
+		        android:layout_marginTop="15dp"
+		        android:layout_centerHorizontal="true"
+		        android:gravity="center_horizontal"
+		        
+		        android:id="@+id/dialog_update_message"
+		        android:layout_alignParentTop="true"
+		        style="@style/DialogTitleStyle"
+	        />
+	        
+		     <ProgressBar
+		         android:id="@+id/progress_update"
+			     android:layout_width="fill_parent"
+			     android:layout_height="wrap_content"
+			     android:layout_marginLeft="15dp"
+			     android:layout_marginRight="15dp"
+			     android:max="100"  
+			     android:progress="20"
+			     android:layout_centerVertical="true"
+			     style="@style/Widget.ProgressBar.RegularProgressBar"
+			     /> 
+			     
+		     
+	    	<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="20%"
+		        android:layout_marginBottom="25dp"
+		        android:layout_centerHorizontal="true"
+		        android:id="@+id/dialog_message"
+		        android:layout_alignParentBottom="true"
+		        style="@style/DialogTextStyle"
+	        />
+    	</RelativeLayout>
+	</RelativeLayout>
+	
+    <View
+      	android:layout_width="fill_parent"
+		android:layout_height="1dp"
+		android:background="@color/bg_grey"
+        />
+    
+       
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:orientation="horizontal"
+	        >	
+        	<Button
+        	    android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/dialog_yes"
+				android:gravity="center"
+				style="?android:attr/buttonBarButtonStyle"
+				android:id="@+id/positiveButton"
+        	    />
+        	<View
+	      	android:layout_height="fill_parent"
+			android:layout_width="1dp"
+			android:background="@color/bg_grey"
+	        />
+         	<Button
+        	    android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:text="@string/dialog_no"
+				android:gravity="center"
+				style="?android:attr/buttonBarButtonStyle"
+				android:id="@+id/negativeButton"
+				
+        	    />       	    
+        
+        </LinearLayout>
+
+    
+</LinearLayout>

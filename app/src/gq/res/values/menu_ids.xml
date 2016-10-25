@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- left slide menu -->
+    <item type="id" name="menu_list_fav" />
+    <item type="id" name="menu_list_feed" />
+    <item type="id" name="menu_list_history" />
+    <item type="id" name="menu_list_offline" />
+    <item type="id" name="menu_mode" />
+    <item type="id" name="menu_hide" />
+    <item type="id" name="menu_list_set" />
+    <!-- main setting -->
+    <item type="id" name="menu_feed" />
+    <item type="id" name="menu_sound" />
+    <item type="id" name="menu_image" />
+    <item type="id" name="menu_edition" />
+    <item type="id" name="menu_clean" />
+    <item type="id" name="menu_update" />
+    <item type="id" name="menu_suggest" />
+    <item type="id" name="menu_about" />
+    
+</resources>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.gmobi.poponews"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionName="2.0.12"
+    >
+
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+
+    <!-- Need by appFlyer SDK-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- Need by appFlyer SDK-->
+
+
+    <!-- Need by night mode-->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <!-- Need by night mode-->
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <application
+        android:name="com.gmobi.poponews.app.PopoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!-- -->
+
+
+        <activity
+            android:name="com.gmobi.poponews.cases.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="PopoNewsId"/>
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.article.ArticleActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.poponews.global.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppStartLoadTranslucent"
+            />
+
+        <activity
+            android:name=".activity.ShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"
+            ></activity>
+
+
+        <activity
+            android:name=".activity.WidgetEditionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.gmobi.poponews.cases.socialsetting.SocialSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.guide.GuideEditionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.categorysetting.CategorySettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.gmobi.poponews.cases.setting.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/SimpleActionBarTheme">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.setting.EditionActivity"
+            android:exported="false"
+            android:label="@string/set_edition"
+            android:screenOrientation="portrait"
+            android:theme="@style/SimpleActionBarTheme">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.EDITION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.gmobi.poponews.cases.favorite.FavoriteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.FAVORITE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.read.ReadActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.HISTORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.offline.OfflineActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.OFFLINE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.newsfeed.FeedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.FEED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gmobi.poponews.cases.facebook.FacebookActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.FACEBOOK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.browser.BrowserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gmobi.poponews.cases.comment.CommentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gmobi.poponews.cases.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gmobi.poponews.cases.register.RegisterActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gmobi.poponews.cases.mycomment.MyCommentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.MYCOMMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmobi.poponews.cases.accountsetting.AccountSettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gmobi.intent.action.ACCOUNTSETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".provider.LocalContentProvider"
+            android:authorities="${APP_ID}"/>
+
+        <service
+            android:name="com.gmobi.poponews.service.OfflineSystemService"
+            android:exported="true"></service>
+
+        <!-- SDK Begins
+
+        <activity
+            android:name="com.gmobi.trade.ActionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.gmobi.trade.ActionService" />`
+
+        <receiver
+            android:name="com.gmobi.trade.ActionMonitor"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <SDK Ends -->
+
+
+        <!-- QQ SDK Begins -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1104962133"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- QQ SDK Ends -->
+
+        <!-- SINA SDK Begins -->
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+        <!-- SINA SDK Ends -->
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1608179009437197"
+            android:exported="true"/-->
+
+
+        <!--AD SDK Begin -->
+        <!-- Ad Service -->
+        <activity
+            android:name="com.reach.PeerActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.reach.OverlayActivity"
+            android:excludeFromRecents="true"
+            android:taskAffinity="reach.peer.overlay"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service android:name="com.reach.ActionService"/>
+
+        <receiver
+            android:name="com.reach.ActionMonitor"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+
+
+        <!--<meta-data-->
+        <!--android:name="reach.debug"-->
+        <!--android:value="true"/>-->
+        <!--<meta-data-->
+        <!--android:name="reach.ads.server.uri"-->
+        <!--android:value="http://api.ads.fotapro.net" />-->
+        <!--<meta-data-->
+            <!--android:name="reach.ads.key"-->
+            <!--android:value="5643123649bd2dc9332c1c54"/>-->
+
+
+        <!--AD SDK End -->
+
+        <activity
+            android:name="com.facebook.ads.InterstitialAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+
+        <!--AppFlyer Begin -->
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <!--AppFlyer End -->
+
+
+        <!--Google Analytics Begin -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <!-- Optionally, register AnalyticsReceiver and AnalyticsService to support background
+             dispatching on non-Google Play devices -->
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <!--Google Analytics End -->
+
+
+        <!--Referrer Begin -->
+        <receiver
+            android:name=".receiver.ReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <!--Referrer End-->
+
+
+        <receiver android:name="com.gmobi.poponews.provider.PoponewsProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_OPTIONS_CHANGED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.nwd.android.calendarwidget.timetick"/>
+                <action android:name="Minikit.Widget.Button.Click"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.gmobi.minikitwidget.ICON"/>
+                <action android:name="com.gmobi.poponews.REFRESH_CLICK"/>
+                <action android:name="com.gmobi.poponews.PREV_CLICK"/>
+                <action android:name="com.gmobi.poponews.NEXT_CLICK"/>
+
+                <action android:name="com.gmobi.poponews.UPDATE_TITLE"/>
+                <action android:name="com.gmobi.poponews.SET_EDITION"/>
+                />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/poponews_provider">
+            </meta-data>
+        </receiver>
+
+
+        <service
+            android:name="com.gmobi.poponews.service.RemoteListviewService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <service
+            android:name="com.gmobi.poponews.service.RefreshListService"
+            android:exported="false"
+            />
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name="com.gmobi.poponews.gcm.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name="com.gmobi.poponews.gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+        <service
+            android:name="com.gmobi.poponews.gcm.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+
+    </application>
+
+</manifest>

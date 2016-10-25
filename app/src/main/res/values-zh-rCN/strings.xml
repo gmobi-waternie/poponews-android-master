@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">泡泡新闻</string>
+    <string name="app_title">泡泡新闻</string>
+    <string name="action_settings">设置</string>
+    <string name="left_drawer_hint_open">打开</string>
+    <string name="left_drawer_hint_close">关闭</string>
+    <string name="action_menu_category">类别</string>
+    <string name="title_error">错误</string>
+    <string name="error_to_load_data">新闻更新失败！\n请检测网络状态</string>
+    <string name="button_ok">确定</string>
+    <string name="main_loading">加载新闻...</string>
+    <string name="store_loading">加载中...</string>
+    <string name="add_favorite">已加入收藏</string>
+    <string name="remove_favorite">已从收藏中移除</string>
+    <string name="share_title">分享至</string>
+    <string name="share_subject">来自POPONEWS分享</string>
+    <string name="setting_nightmode">夜间模式</string>
+    <string name="setting_fontsize">字体大小</string>
+    <string name="setting_nointerested">不感兴趣</string>
+    <string name="press_back_again">再按一次退出应用</string>
+    <string name="ctg_cannot_all_clear">请至少保留一个类别</string>
+    <string name="label_menu_fav">我的收藏</string>
+    <string name="label_menu_feed">最新订阅</string>
+    <string name="label_menu_histroy">最近阅读</string>
+    <string name="label_menu_download">离线下载</string>
+    <string name="label_menu_config">设置</string>
+    <string name="label_menu_mode_night">夜间模式</string>
+    <string name="label_menu_mode_hide">隐藏已读新闻</string>
+    <string name="splash_ver">版本: %1$s</string>
+    <string name="splash_foot">www.poponews.com</string>
+    <string name="webview_readsource">阅读原文</string>
+
+    <!-- emo names -->
+    <string name="label_amaze">吃惊</string>
+    <string name="label_move">感动</string>
+    <string name="label_angry">火大</string>
+    <string name="label_happy">高兴</string>
+    <string name="label_sad">难过</string>
+    <string name="label_worry">担忧</string>
+
+    
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_pull_label">Pull to get the latest news...</string>
+    <string name="pull_to_refresh_tap_label">Pull to get the latest news...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading News...</string>
+    
+    <string name="pull_to_refresh">下拉获取最新新闻</string>
+	<string name="release_to_refresh">释放刷新</string>
+	<string name="refreshing">更新新闻中</string>
+	<string name="not_updated_yet">Never Udpate</string>
+	<string name="updated_at">Last update at %1$s ago</string>
+	<string name="updated_just_now">Just updated</string>
+	<string name="time_error">Load failed.</string>
+	
+	<string name="minute"> minute</string>
+	<string name="hour"> hour</string>
+	<string name="day"> day</string>
+	<string name="month"> month</string>
+	<string name="year"> year</string>
+
+	<!-- settings main-->
+    <string name="set_feed">新闻推送</string>
+    <string name="set_edition">国家和语言</string>
+    <string name="set_clean">清理缓存</string>
+    <string name="set_suggest">意见反馈</string>
+    <string name="set_store">精彩应用</string>
+    <string name="set_about">关于</string>
+    
+    
+    <string name="dialog_update_title">更新</string>
+    <string name="dialog_update_progress_title">更新进度</string>
+    <string name="dialog_update_text">检查到新版本 \n是否更新?</string>
+    <string name="dialog_update_text2">升级版本到%1$s</string>
+    
+    <string name="dialog_fav_title">我的收藏</string>
+    <string name="dialog_fav_text">移除这些收藏?</string>
+    <string name="dialog_yes">好</string>
+    <string name="dialog_no">取消</string>
+    <string name="dialog_clean">清理中</string>
+
+    <string name="fav_delete">是否移除这些收藏？</string>
+    <string name="fav_share">请先选择要分享的收藏</string>
+    
+    <string name="update_skip">跳过</string>
+
+    
+
+    <string name="offline_setting_title">离线设置</string>
+    <string name="offline_select_category">选择类别</string>
+    <string name="offline_select_all">全选</string>
+    <string name="offline_download_pic">下载图片</string>
+    <string name="offline_download_time">定时离线下载</string>
+    <string name="dialog_offline_time_title">设置时间</string>
+    <string name="offline_download_empty">请先选择一个类别</string>
+    <string name="offline_download_finish">离线下载完成</string>
+
+    <string name="feedback_info">请输入反馈:</string>
+    <string name="feedback_send">发送</string>
+    
+    <string name="notification_title">你收到一条新的订阅新闻。</string>
+    <string name="feed_is_empty">目前没有订阅的新闻</string>
+    <string name="feedback_sent">反馈已发送</string>
+
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自PoPoNews %2$s）</string>
+    <string name="dialog_share_close">关闭</string>
+    <string name="dialog_share_title">分享</string>
+    <string name="social_select_category">选择类别</string>
+    <string name="facebook_name">Facebook</string>
+    <string name="twitter_name">Twitter</string>
+    <string name="google_name">Google</string>
+    <string name="tabs_me">我</string>
+    <string name="tabs_discovery">发现</string>
+    <string name="tabs_news">新闻</string>
+    <string name="tabs_video">视频</string>
+    <string name="clicklogin">点击登陆</string>
+    <string name="load_social_channel">加载中...</string>
+    <string name="category_setting_done">完成</string>
+    <string name="category_setting_edit">编辑</string>
+    <string name="set_video">自动播放视频</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_not_install">请先安装微信APP.</string>
+    <string name="fav_select_empty">请勾选要删除的收藏。</string>
+    <string name="feedback_empty">请先写点东西吧！</string>
+    <string name="offline_download_no_network">无网络连接，离线下载停止。</string>
+    <string name="pic_can_save">长按图片保存</string>
+    <string name="pic_saved">图片保存于</string>
+    <string name="comment_reply">回复</string>
+    <string name="comment_reply_more">展开更多回复...</string>
+    <string name="comment_reply_notnull">~回复内容不能为空~</string>
+    <string name="comment_tv_hot">热门评论</string>
+    <string name="comment_tv_more">更多评论</string>
+    <string name="comment_tv_news">最新评论</string>
+    <string name="comment_tv_nomore">暂无评论</string>
+    <string name="comment_write">评论</string>
+    <string name="comment_write_news">新增评论</string>
+    <string name="comment_mine">我的帖子</string>
+    <string name="comment_write_notnull">~评论内容不能为空~</string>
+    <string name="label_menu_account_setting">用户设置</string>
+    <string name="label_menu_mycomment">与我相关</string>
+    <string name="time_util_before_yesterday">2天前</string>
+    <string name="time_util_hour">小时前</string>
+    <string name="time_util_hours">小时前</string>
+    <string name="time_util_just">刚刚</string>
+    <string name="time_util_minute">分钟前</string>
+    <string name="time_util_minutes">分钟前</string>
+    <string name="time_util_yesterday">1天前</string>
+    <string name="user_login">用户登陆</string>
+    <string name="user_login_email">用户名/邮箱</string>
+    <string name="user_login_ok">登陆</string>
+    <string name="user_login_out">登出</string>
+    <string name="user_login_please">请先登陆噢</string>
+    <string name="user_login_pwd">密码</string>
+    <string name="user_other_login">还可选择第三方登陆</string>
+    <string name="user_other_login_face">Facebook登陆</string>
+    <string name="user_other_login_google">Google登陆</string>
+    <string name="user_other_login_twitter">Twitter登陆</string>
+    <string name="user_register">注册</string>
+    <string name="user_register_email">请输入邮箱</string>
+    <string name="user_register_email_no">邮箱不能为空</string>
+    <string name="user_register_email_qualified">请输入正确的邮箱</string>
+    <string name="user_register_exists">该邮箱已被注册</string>
+    <string name="user_register_new">注册新用户</string>
+    <string name="user_register_pwd">设置密码(长度必须大于6位)</string>
+    <string name="user_register_pwd_again">再次确认密码</string>
+    <string name="user_register_pwd_again_no">请再次确认密码</string>
+    <string name="user_register_pwd_different">两次输入的密码不一致</string>
+    <string name="user_register_pwd_no">密码不能为空</string>
+    <string name="user_register_pwd_qualified">密码长度必须大于6位</string>
+    <string name="user_register_no">没有账号?</string>
+    <string name="user_register_now">立即注册</string>
+    <string name="user_register_agree">我已阅读并同意</string>
+    <string name="user_register_privacy">用户隐私协议</string>
+    <string name="user_login_error">账号或密码有误</string>
+    <string name="user_request_timeout">请求超时，请重试</string>
+    <string name="uninteresting_menu_optional_reason">可选理由，精准屏蔽</string>
+    <string name="uninteresting_menu_uninterest">不感兴趣</string>
+    <string name="uninteresting_menu_selected">已选</string>
+    <string name="uninteresting_menu_optional">理由</string>
+    <string name="uninteresting_menu_confirm">确定</string>
+    <string name="uninteresting_menu_again">重复、旧闻</string>
+    <string name="uninteresting_menu_quality">内容品质差</string>
+    <string name="uninteresting_menu_from">来源</string>
+    <string name="uninteresting_menu_thank">感谢您的反馈</string>
+    <string name="account_setting_unlogin">未登录</string>
+    <string name="account_setting_bind">立即绑定</string>
+    <string name="account_setting_bind_error">绑定失败</string>
+    <string name="account_setting_unbind">取消绑定</string>
+    <string name="account_setting_unbind_error">解绑失败</string>
+    <string name="about_me_reply">回复了我</string>
+    <string name="about_me_reply_me">回复我的评论</string>
+</resources>

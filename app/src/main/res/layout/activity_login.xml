@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/statusBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_login_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/bg_red">
+
+        <ImageButton
+            android:id="@+id/comment_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_login_selector"
+            android:src="@drawable/navigaton_back" />
+
+
+        <TextView
+            android:id="@+id/ss_action_bar_title"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="@string/user_login" />
+
+        <TextView
+            android:id="@+id/login_register"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="@string/user_register" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/icon_login_username"
+                android:layout_height="44dp" />
+            <EditText
+                android:id="@+id/et_local_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textColorHint="@color/comment_write_text"
+                android:layout_marginLeft="4dp"
+                android:hint="@string/user_login_email" />
+        </LinearLayout>
+        <View
+            android:background="@color/comment_write_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="0.4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/icon_login_pw"
+                android:layout_height="44dp" />
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:textColorHint="@color/comment_write_text"
+                android:layout_marginLeft="4dp"
+                android:hint="@string/user_login_pwd" />
+        </LinearLayout>
+        <View
+            android:background="@color/comment_write_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="0.4dp"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/TitleTextStyle"
+            android:background="@drawable/btn_login_selector"
+            android:text="@string/user_login_ok" />
+        <TextView
+            android:text="@string/user_other_login"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/comment_ding_num"
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="@color/comment_write_text"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="0.4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/login_facebook"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/comment_ding_num"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/login_facebook_selector"
+                android:text="@string/user_other_login_face" />
+
+            <TextView
+                android:id="@+id/login_twitter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/comment_ding_num"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/login_twitter_selector"
+                android:text="@string/user_other_login_twitter" />
+
+            <TextView
+                android:id="@+id/login_google"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/comment_ding_num"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/login_google_selector"
+                android:text="@string/user_other_login_google" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
